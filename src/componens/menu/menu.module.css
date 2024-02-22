@@ -1,0 +1,37 @@
+.nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.navContainer{
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px 0 50px;
+}
+
+.navMenu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navMenu li {
+    display: inline-block;
+    align-self: center;
+}
+
+.linkMenu{
+    display: block; 
+    padding: 8px 0px; 
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    
+    text-transform: uppercase;
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+}
