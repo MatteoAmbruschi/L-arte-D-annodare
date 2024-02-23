@@ -9,16 +9,25 @@
 }
 
 .navContainer{
-    max-width: 1450px;
+    max-width: 1300px;
     width: 100%;
     margin: 0 auto;
     padding: 0 50px 0 50px;
+    display: flex;
 }
 
 .navMenu{
     display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.conteinerLinks{
+    width: 70%;
+    display: flex;
     justify-content: space-between;
 }
+
 
 .navMenu li {
     display: inline-block;
@@ -28,10 +37,41 @@
 .linkMenu{
     display: block; 
     padding: 8px 0px; 
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
     text-decoration: none;
     
     text-transform: uppercase;
     font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 1024px){
+
+    .iconHamburger {
+        height: 35px;
+        margin-right: 25px;
+    }
+    
+    .iconHamburger span{
+        z-index: 999;
+        display: block; 
+        height: 5px; 
+        width: 27px; 
+        position: relative; 
+        background: var(--dark); 
+        border: 0.1px solid #7E1414;
+        margin-top: 10px; 
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+            }
+    
+    .menuOpen .iconHamburger span:nth-child(1){z-index: 999; background-color: #dce442; transform: rotate(45deg) translateY(10.5px);}
+    .menuOpen  .iconHamburger span:nth-child(2){z-index: 999; background-color: #dce442;transform: rotate(-45deg) translateY(-10.5px);}
+    
+    .menuOpen  .navMenu{
+        height: 100vh;
+        padding: 0 5% 0 5%;
+    }
+    
 }
