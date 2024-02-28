@@ -1,5 +1,5 @@
 .nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -12,82 +12,176 @@
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 50px 0 50px;
+
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.logoMenu{
+    align-self: center;
+    padding: 8px 0px 8px 30px; 
 }
 
 .navMenu{
     width: 70%;
     display: flex;
-    justify-content: space-between;
-}
-
-.containerLinks{
-    display: flex;
-    width: 100%;
-    justify-content: end;
+    justify-content: space-around;
 }
 
 
-.navMenu li {
-    display: inline-block;
-    align-self: center;
-}
 
 .linkMenu{
-    display: block; 
+    display: inline-block;
     padding: 8px 0px; 
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 21px;
+    font-weight: 500;
     text-decoration: none;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif, 'Segoe UI', Geneva, Verdana, sans-serif;
+    color: var(--dark);
+} 
+
     
-    text-transform: uppercase;
-    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+
+.prospectiveText {
+    display: flex;
+    align-items: center;
+    transition: all 0.45s cubic-bezier(0.76,0,0.24,1);
+    transform-style: preserve-3d;
+  }
+  .prospectiveText a{
+    align-self: center;
+    transition: all 0.45s cubic-bezier(0.76,0,0.24,1);
+  }
+  
+  .prospectiveText a:nth-child(2){
+      position: absolute;
+      transform: rotateX(-90deg) translateY(11px);
+      transform-origin: bottom center;
+  }
+  
+  .prospectiveText:hover {
+    transform: rotateX(90deg);
+  }
+  
+  .prospectiveText a:nth-child(1):hover{
+    transform: rotateY(-100%);
+    opacity: 0;
+  }
+  
+
+
+
+
+.underMenu{
+    transition: all 0.7s cubic-bezier(0.77,0.2,0.05,1.0); 
+    display: flex;
+    position: absolute;
+    background-color: var(--light);
+    flex-direction: column;
+    width: 200px;
+    height: 0;
+    margin-top: 7px;
+    justify-content: space-around;
+    box-shadow: 0px 9px 13px 3px rgba(0, 0, 0, 0.17);
+    border-radius: 0px 0px 12px 12px;
+
+    overflow: hidden;
 }
+
+
+.dropDownActive .underMenu{
+    height: 170px;
+    padding: 0.5%;
+}
+
+.underMenu a{
+    width: 100%;
+    font-size: 20px;
+ }
+
+ .rotateSvg{
+    transition: all 0.2s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ .dropDownActive .rotateSvg{
+    transform: rotate(-180deg);
+ }
+ 
 
 @media screen and (max-width: 1024px){
 
     .navMenu{
         position: absolute;
-        top: 40px;
-        background-color: #e7e7e7;
+        top: 44px;
+        background-color: var(--light);
         width: 100%;
-        height: 100vh;
         height: 0vh; 
         overflow: hidden;
+        flex-direction: column;
+        justify-content: start;
        
         transition: all 0.7s cubic-bezier(0.77,0.2,0.05,1.0);
     }
     .linkMenu{
         width: 100%;
-        border-bottom: 1px solid #707070;
     }
 
     .menuOpen .navMenu{
-        height: 100vh !important ;
-        padding: 3% !important;
+        height: calc(100vh - 52px);
+        height: calc(100svh - 44px);
+        padding: 3% ;
+    }
+    .navMenu .linkMenu{width: 100%; 
+        border-bottom: 1px solid #707070; 
+        padding: 30px 0;
     }
 
     .iconHamburger {
         height: 35px;
         margin-right: 25px;
+        cursor: pointer;
     }
     
     .nthChild1, .nthChild2{
-        z-index: 999;
         display: block; 
-        height: 5px; 
+        height: 2px; 
         width: 27px; 
+        border-radius: 6px;
         position: relative; 
         background: var(--dark); 
-        border: 0.1px solid #7E1414;
         margin-top: 10px; 
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
             }
     
-    .menuOpen .nthChild1{z-index: 999; background-color: #7E1414; transform: rotate(45deg) translateY(10.5px);}
-    .menuOpen .nthChild2{z-index: 999; background-color: #7E1414;transform: rotate(-45deg) translateY(-10.5px);}
+    .menuOpen .nthChild1{background-color: rgb(66, 66, 66); transform: rotate(45deg) translateY(9px);}
+    .menuOpen .nthChild2{background-color: rgb(66, 66, 66);transform: rotate(-45deg) translateY(-9px);}
     
+
+
+    
+    .underMenu{
+        position: relative;
+        width: 200px;
+        margin-top: 7px;
+        box-shadow: none;
+    }
+
+    .logoMenu img{
+       width: 67%;
+       height: auto;
+    }
+    .logoMenu {
+        padding: 7px 0px 7px 20px; 
+    } 
+
+    .navContainer {
+        height: 47px;
+    }
+
 }
