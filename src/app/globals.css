@@ -13,8 +13,7 @@ html,
 body {
   background: var(--dark);
   color: var(--light);
-
-  font-family: Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 a {
@@ -24,4 +23,9 @@ a {
 
 h1 {
   font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.mainContent {
+  max-width: 1420px;
+  margin: 0 auto;
 }
