@@ -13,7 +13,7 @@ html,
 body {
   background: var(--dark);
   color: var(--light);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif, 'Segoe UI', Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -22,7 +22,35 @@ a {
 }
 
 h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif
+  font-size: 130px;
+  letter-spacing: 9px;
+  line-height: 100px;
+  text-align: center;
+  font-weight: 300;
+  border-bottom: 1px solid #C9A66F;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif ;
+  letter-spacing: 9px;
+  color: var(--light);
+  font-size: 19px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+h4 {
+  color: var(--light);
+  font-size: 19px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  font-style: italic;
+  padding-top: 20px;
 }
 
 .mainContent {
