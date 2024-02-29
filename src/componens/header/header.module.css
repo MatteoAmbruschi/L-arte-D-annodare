@@ -9,7 +9,7 @@
 
 .img{
     width: 100%;
-    min-height: 72vh; 
+    min-height: 685px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,9 +46,39 @@
     align-items: center;
     flex-direction: column;
     width: 1050px;
-
 }
 
-.subTitle{
-   
+.hr{
+    width: 170px;
+    height: 1px;
+    background-color: var(--gold);
+    margin-top: 30px;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .containerText{
+        width: 750px;
+    }
+    .img{
+        min-height: 605px; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .containerText{
+        width: 615px;
+    }
+    .img{
+        min-height: 585px; 
+    }
+}
+
+@media screen and (max-width: 767px){
+    .containerText{
+        width: 80%;
+    }
+    .img{
+        min-height: 585px; 
+    }
 }

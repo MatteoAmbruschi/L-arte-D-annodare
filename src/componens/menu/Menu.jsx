@@ -20,10 +20,10 @@ const Menu = () => {
 
                     <ul className={styles.navMenu}>
                         <li className={styles.linkMenu}>
-                        <div className={styles.prospectiveText}>
-                            <Link href="/lavaggio-tappeti-bergamo" onClick={() => setToggle(false)}>Lavaggio Tappeti</Link>
-                            <Link href="/lavaggio-tappeti-bergamo" onClick={() => setToggle(false)}>Lavaggio Tappeti</Link>
-                        </div>
+                        <Link href="/lavaggio-tappeti-bergamo" onClick={() => setToggle(false)} className={styles.prospectiveText}>
+                            <p>Lavaggio Tappeti</p>
+                            <p>Lavaggio Tappeti</p>
+                        </Link>
                         </li>
 
                             <li 
@@ -32,26 +32,26 @@ const Menu = () => {
                             className={` ${styles.linkMenu} ${dropDownToggle ? styles.dropDownActive : ''}`}>
                                    <div onClick={(() => setDropDownToggle(!dropDownToggle))}>Storie di Tappeti <span><Image src='arrow-down-icon.svg' width={11} height={11} alt='freccia menu' className={styles.rotateSvg} /></span></div>
                                     <div className={styles.underMenu }>
-                                        <div className={styles.prospectiveText}>
-                                            <Link href="/contatti" onClick={() => setToggle(false)}>Tappeti Persiani</Link>
-                                            <Link href="/contatti" onClick={() => setToggle(false)}>Tappeti Persiani</Link>
-                                        </div>
-                                        <div className={styles.prospectiveText}>
-                                            <Link href="/contatti" onClick={() => setToggle(false)}>Tappeti Orientali</Link>
-                                            <Link href="/contatti" onClick={() => setToggle(false)}>Tappeti Orientali</Link>
-                                        </div>
-                                        <div className={styles.prospectiveText}>
-                                            <Link href="/contatti" onClick={() => setToggle(false)}>Tappeti Kilim</Link>
-                                            <Link href="/contatti" onClick={() => setToggle(false)}>Tappeti Kilim</Link>      
-                                        </div>
+                                        <Link href="/tappeti-persiani" onClick={() => setToggle(false)} className={styles.prospectiveText}>
+                                            <p>Tappeti Persiani</p>
+                                            <p>Tappeti Persiani</p>
+                                        </Link>
+                                        <Link href="/tappeti-orientali" onClick={() => setToggle(false)} className={styles.prospectiveText}>
+                                            <p>Tappeti Orientali</p>
+                                            <p>Tappeti Orientali</p>
+                                        </Link>
+                                        <Link href="/tappeti-kilim" onClick={() => setToggle(false)} className={styles.prospectiveText}>
+                                            <p>Tappeti Kilim</p>
+                                            <p>Tappeti Kilim</p>      
+                                        </Link>
                                     </div>
                             </li>
 
                         <li className={styles.linkMenu}>
-                            <div className={styles.prospectiveText}>
-                                <Link href="/contatti" onClick={() => setToggle(false)}>Contatti</Link>
-                                <Link href="/contatti" onClick={() => setToggle(false)}>Contatti</Link>
-                            </div>
+                            <Link href="/contatti" onClick={() => setToggle(false)} className={styles.prospectiveText}>
+                                <p>Contatti</p>
+                                <p>Contatti</p>
+                            </Link>
                         </li>
                     </ul>
                 

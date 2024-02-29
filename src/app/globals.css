@@ -1,6 +1,8 @@
 :root{
   --light: #EFEFEF;
   --dark: #1C1C1C;
+  --red: #831812;
+  --gold: #A18464;
 }
 
 * {
@@ -27,7 +29,7 @@ h1 {
   line-height: 100px;
   text-align: center;
   font-weight: 300;
-  border-bottom: 1px solid #C9A66F;
+  border-bottom: 1px solid var(--gold);
   padding-bottom: 20px;
 }
 
@@ -56,4 +58,89 @@ h4 {
 .mainContent {
   max-width: 1420px;
   margin: 0 auto;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  h1 {
+    font-size: 100px;
+    letter-spacing: 9px;
+    line-height: 70px;
+    padding-bottom: 17px;
+  }
+
+  h3 {
+    font-size: 	14px;
+    line-height: 19px;
+    padding-bottom: 10px;
+  }
+
+  h4 {
+    font-size: 17px;
+    line-height: 24px;
+    padding-top: 17px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 83px;
+    letter-spacing: 7px;
+    line-height: 60px;
+    padding-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 	14px;
+    line-height: 19px;
+    padding-bottom: 10px;
+  }
+
+  h4 {
+    font-size: 17px;
+    line-height: 24px;
+    padding-top: 17px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+  h1 {
+    font-size: 55px;
+    letter-spacing: 5px;
+    line-height: 39px;
+    padding-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 	14px;
+    line-height: 19px;
+    padding-bottom: 10px;
+  }
+
+  h4 {
+    font-size: 17px;
+    line-height: 23px;
+    padding-top: 17px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  h1 {
+    font-size: 12.8vw;
+    letter-spacing: 3px;
+    line-height: 9.5vw;
+    padding-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 	13px;
+    line-height: 16px;
+    padding-bottom: 13px;
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 17px;
+  }
 }

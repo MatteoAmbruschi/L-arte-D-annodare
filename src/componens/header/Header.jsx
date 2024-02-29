@@ -1,7 +1,8 @@
 import styles from './header.module.css'
 import Image from 'next/image'
+import Button from '../button/Button'
 
-function Header({imgHead, title, subTitle, text}) {
+function Header({imgHead, title, subTitle, text, button = false}) {
 
     return (
         <section className={styles.containerHeader}>
@@ -22,6 +23,7 @@ function Header({imgHead, title, subTitle, text}) {
                       <h4>
                         {text}
                       </h4>
+                      {button ? (<><div className={styles.hr} /> <Button /></>) : ''}
                 </div>
         </section>  
     )
