@@ -1,7 +1,7 @@
 import Header from "@/componens/header/Header"
 
 const LavaggioTappeti = () => {
-    const textHead = <>LAVAGGIO D’ECCELLENZA EFFETTUATO CON I MIGLIORI MACCHINARI. Vi ricordiamo inoltre che se aveste difficoltà a raggiungerci o a caricare i tappeti in macchina, vi offriamo un servizio <strong>GRATUITO</strong> di ritiro e consegna.</>;
+    const textHead = <>LAVAGGIO D&apos;ECCELLENZA EFFETTUATO CON I MIGLIORI MACCHINARI. Vi ricordiamo inoltre che se aveste difficoltà a raggiungerci o a caricare i tappeti in macchina, vi offriamo un servizio <strong>GRATUITO</strong> di ritiro e consegna.</>;
 
     return (
         <div>

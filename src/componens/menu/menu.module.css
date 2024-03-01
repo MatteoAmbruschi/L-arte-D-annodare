@@ -37,7 +37,6 @@
 .linkMenu{
     display: inline-block;
     padding: 8px 0px; 
-    font-size: 21px;
     font-weight: 500;
     text-decoration: none;
     font-style: italic;
@@ -73,9 +72,7 @@
     opacity: 0;
   }
   
-
-
-
+  
 
 .underMenu{
     transition: all 0.7s cubic-bezier(0.77,0.2,0.05,1.0); 
@@ -183,5 +180,8 @@
     .navContainer {
         height: 47px;
     }
-
+    
+    .underMenu p{
+        font-size: 17px;
+     }
 }

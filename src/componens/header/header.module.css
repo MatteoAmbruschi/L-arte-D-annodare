@@ -55,6 +55,10 @@
     margin-top: 30px;
 }
 
+.containerText h3 {
+    letter-spacing: 9px;
+}
+
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     .containerText{
@@ -63,6 +67,9 @@
     .img{
         min-height: 605px; 
     }
+    .containerText h3 {
+        letter-spacing: 8px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -70,15 +77,32 @@
         width: 615px;
     }
     .img{
-        min-height: 585px; 
+        min-height: 585px;
+        background-position:bottom;
+        background-attachment:scroll;
+    }
+    .containerText h3 {
+        letter-spacing: 7px;
     }
 }
 
 @media screen and (max-width: 767px){
     .containerText{
-        width: 80%;
+        width: 85%;
     }
     .img{
-        min-height: 585px; 
+        min-height: 585px;
+        background-position:bottom;
+        background-attachment:scroll;
     }
+
+    .hr{
+        width: 130px;
+        margin-top: 25px;
+    }
+    .containerText h3 {
+        letter-spacing: 5px;
+        font-size: 15px;
+    }
+    
 }
