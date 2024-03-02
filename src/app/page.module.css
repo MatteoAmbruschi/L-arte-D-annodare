@@ -49,13 +49,67 @@
 }
 
 
+
+.containerBackground {
+    background-image: linear-gradient(330deg, #1C1C1C 29%, #000000 0%);
+    position: relative;
+}
+.backgroundOverlay{
+    background-attachment: fixed;
+    filter: brightness(25%) contrast(100%) saturate(100%) blur(0) hue-rotate(0deg);
+    background-image: url('/negozio-tappeti-bergamo.webp');
+    background-position: top center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+    mix-blend-mode: screen;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.shapeTop{
+    top: -1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.shapeTop svg {
+    height: 198px;
+    transform: translateX(-50%) rotateY(180deg);
+    width: 100%;
+    position: relative;
+    left: 50%;
+}
+
+.shapeBottom{
+    transform: rotate(180deg);
+    bottom: -1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.shapeBottom svg {
+    height: 196px;
+    width: 100%;
+    position: relative;
+}
+
+.fill  { fill: #1c1c1c; }
+
+
+
+.flexContent {
+    display: flex;
+    flex-direction: row;
+    position: static;
+}
+
 .contattami {
    display: flex;
    flex-direction: column;
    align-items: center;
-}
-.contattami a{
-    width: 220px;
+   position: relative;
+   width: 45%;
 }
 
 .contattami hr {

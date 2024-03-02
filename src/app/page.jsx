@@ -4,6 +4,7 @@ import Image from 'next/image';
 import styles from './page.module.css'
 import CarpetsSlide from '@/componens/carpetsSlide/CarpetsSlide';
 import Button from '@/componens/button/Button';
+import InfoShop from '@/componens/InfoShop/InfoShop';
 
 export default function Home() {
   const textHead = <> <strong>L&apos;arte d&apos;annodare di Giampietro Ambruschi a Seriate (Bergamo),</strong> è un punto di riferimento a <strong>Bergamo e provincia per chi ama il tappeto orientale.</strong> Offriamo nel nostro negozio/laboratorio un&apos;accurato <strong>servizio di vendita, restauro e lavaggio tappeti.</strong> </>;
@@ -52,12 +53,25 @@ export default function Home() {
       </div>
 
 
-      <div className='mainContent'>
 
-      <div>
-        
+  <section className={styles.containerBackground}>
+
+    <div className={styles.backgroundOverlay} />
+      <div className={styles.shapeTop}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+          <path class={styles.fill} d="M0,6V0h1000v100L0,6z"></path>
+        </svg>
       </div>
+      <div className={styles.shapeBottom}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+          <path class={styles.fill} d="M0,6V0h1000v100L0,6z"></path>
+        </svg>
+      </div>
+    
+    <div className={`mainContent ${styles.flexContent}`}>
 
+        <InfoShop restauro={'vsd'} lavaggio={'vv'} vendita={'sss'} />
+      
           <div className={styles.contattami}>
             <h3>VIENI A TROVARCI</h3>
             <h2>CONTATTAMI</h2>
@@ -65,9 +79,9 @@ export default function Home() {
             <p>NEGOZIO IN: Via: Corso Roma, 26 24068 - Seriate (BG)</p>
             <Button />
           </div>
-
-          
       </div>
+
+  </section>
 
     </>
   );

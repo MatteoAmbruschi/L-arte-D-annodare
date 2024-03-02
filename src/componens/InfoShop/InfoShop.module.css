@@ -1,0 +1,53 @@
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 40%;
+    margin-left: 15%;
+}
+
+.rotateSvg{
+    transition: all 0.2s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ .toggleActive .rotateSvg{
+    transform: rotate(-180deg);
+ }
+
+.containerClick{
+    width: 100%;
+}
+
+ .rowInfo{
+    height: 80px;
+    width: 100%;
+    background-color: #2B2B2B;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 23px;
+    line-height: 28px;
+    cursor: pointer;
+ }
+
+ .open{
+    height: 0vh;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    transition: all 0.7s cubic-bezier(0.77,0.2,0.05,1.0);
+    text-align: justify;
+    justify-content:left;
+    padding: 0 30px;
+ }
+
+ .toggleActive .open {
+    height: 280px;
+    padding: 25px 30px;
+ }
+
+ .toggleActive .rowInfo {
+    color: var(--gold);
+ }
