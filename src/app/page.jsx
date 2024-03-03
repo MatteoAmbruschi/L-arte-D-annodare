@@ -7,7 +7,11 @@ import Button from '@/componens/button/Button';
 import InfoShop from '@/componens/InfoShop/InfoShop';
 
 export default function Home() {
-  const textHead = <> <strong>L&apos;arte d&apos;annodare di Giampietro Ambruschi a Seriate (Bergamo),</strong> è un punto di riferimento a <strong>Bergamo e provincia per chi ama il tappeto orientale.</strong> Offriamo nel nostro negozio/laboratorio un&apos;accurato <strong>servizio di vendita, restauro e lavaggio tappeti.</strong> </>;
+  const textHead = <><strong>L&apos;arte d&apos;annodare di Giampietro Ambruschi a Seriate (Bergamo),</strong> è un punto di riferimento a <strong>Bergamo e provincia per chi ama il tappeto orientale.</strong> Offriamo nel nostro negozio/laboratorio un&apos;accurato <strong>servizio di vendita, restauro e lavaggio tappeti.</strong> </>;
+  const textRestauro= <>All&apos;interno del laboratorio <strong>disponiamo di oltre 200 kg di lana orientale tinte anche con colori vegetali.</strong> Quando ci viene fatto visionare un tappeto cerchiamo di consigliare il lavoro più appropriato considerandone il valore, la condizione, la tipologia ecc, <strong>senza mai dimenticarci</strong> che qualsiasi tappeto, anche il più umile, <strong>può rivestire una grande importanza per chi lo possiede.</strong> I preventivi sono immediati, chiari e <strong>senza rischio di sgradite “sorprese” finali.</strong></>
+  const textLavaggio= <><strong>Il lavaggio del tappeto</strong> è un operazione delicata che <strong>non si può improvvisare, anche perché non tutti i tappeti sono uguali,</strong> noi garantiamo <strong>il miglior lavaggio.</strong> Offriamo gratuitamente il controllo e l&apos;eventuale intervento di piccoli restauri atti ad evitare spese gravose in futuro. Se avete difficoltà a consegnarci i tappeti in negozio, <strong>possiamo pensarci noi al ritiro e alla consegna gratuitamente.</strong></>
+  const textVendita = <><strong>In negozio si possono visionare i nostri tappeti,</strong> fare una prima cernita e posizionarne alcuni a casa: <strong>dopo averli vissuti un paio di giorni si deciderà</strong> se acquistarne uno, rivederne altri in negozio, o semplicemente riconsegnarceli perché il tutto è naturalmente <strong>senza impegno.</strong> Se si gradisse una nostra consulenza in loco saremmo felici di offrirvela.</>
+  
   return (
     <>
       <Header imgHead={"/tappetiBergamo.webp"} title={"L'ARTE D'ANNODARE"} subTitle={'NEGOZIO DI TAPPETI'} text={textHead} button={true} />
@@ -70,7 +74,7 @@ export default function Home() {
     
     <div className={`mainContent ${styles.flexContent}`}>
 
-        <InfoShop restauro={'vsd'} lavaggio={'vv'} vendita={'sss'} />
+        <InfoShop restauro={textRestauro} lavaggio={textLavaggio} vendita={textVendita} />
       
           <div className={styles.contattami}>
             <h3>VIENI A TROVARCI</h3>

@@ -3,14 +3,15 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 40%;
-    margin-left: 15%;
+    width: 45%;
+    margin-left: 10%;
+    box-shadow: 0px 0px 13px 3px rgba(0, 0, 0, 0.17);
 }
 
 .rotateSvg{
     transition: all 0.2s cubic-bezier(0.77,0.2,0.05,1.0);
  }
- .toggleActive .rotateSvg{
+ .toggleActive .rotateSvg, .toggleActiveLavaggio .rotateSvg, .toggleActiveVendita .rotateSvg{
     transform: rotate(-180deg);
  }
 
@@ -24,11 +25,12 @@
     background-color: #2B2B2B;
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding: 0 30px;
     font-style: italic;
     font-size: 23px;
     line-height: 28px;
     cursor: pointer;
+    justify-content: space-between;
  }
 
  .open{
@@ -43,11 +45,11 @@
     padding: 0 30px;
  }
 
- .toggleActive .open {
+ .toggleActive .open, .toggleActiveLavaggio .open, .toggleActiveVendita .open{
     height: 280px;
     padding: 25px 30px;
  }
 
- .toggleActive .rowInfo {
+ .toggleActive .rowInfo, .toggleActiveLavaggio .rowInfo, .toggleActiveVendita .rowInfo{
     color: var(--gold);
  }
