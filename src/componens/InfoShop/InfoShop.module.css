@@ -40,8 +40,8 @@
     overflow: hidden;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter:blur(10px);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter:blur(9px);
     
     transition: all 0.7s cubic-bezier(0.77,0.2,0.05,1.0);
     text-align: justify;
@@ -110,14 +110,19 @@
    .toggleActive .open{ height: 310px }
    .toggleActiveLavaggio .open { height: 290px }
    .toggleActiveVendita .open { height: 245px }
- }
 
+ }
  
  @media screen and (max-width: 480px){
    .rowInfo{
       height: 75px;
       font-size: 21px;
       line-height: 26px;
+   }
+
+   .open{
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter:blur(4px);
    }
 
    .column{
