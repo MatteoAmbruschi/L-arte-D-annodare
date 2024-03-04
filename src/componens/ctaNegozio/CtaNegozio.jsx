@@ -8,8 +8,9 @@ function CtaNegozio() {
         <section className={styles.sectionCta}>
         <div className={`mainContent ${styles.containerCta}`}>
 
-          <Link href='/contatti' className={styles.CenterTxt}>
-             Ti Aspettiamo In Negozio
+          <Link href='/contatti' className={styles.prospectiveText}>
+             <p>Ti Aspettiamo In Negozio</p>
+             <p>Ti Aspettiamo In Negozio</p>
           </Link>
     
         <div className={styles.containerImgCta}>

@@ -1,0 +1,55 @@
+.sectionReviews{
+    background-image: linear-gradient(40deg, #1D1D1D 33%, #000000 0%);
+    border-style: solid;
+    border-width: 0 0 60px 0;
+    border-color: #1c1c1c;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 60px;
+    position: relative;
+}
+
+.backgroundOverlay {
+    background-attachment: fixed;
+    filter: brightness(53%) contrast(100%) saturate(100%) blur(0) hue-rotate(0deg);
+    background-image: url('/tappeto-bergamo-provincia.webp');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .51;
+    mix-blend-mode: screen;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.shapeBottom{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    bottom: -1px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.shapeBottom svg{
+    height: 159px;
+    transform:rotateY(180deg);
+    width: 100%;
+    position: relative;
+}
+
+
+.containerReviews{
+    position: relative;
+    align-items: start;
+}
+
+.containerReviews a {
+    align-self: flex-end;
+}
+
+.cards{
+    height: 200px;
+}

@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 
-.CenterTxt{
+.prospectiveText p{
     font-size: 112px;
     line-height: 92px;
     font-weight: lighter;
@@ -18,11 +18,9 @@
     font-style: italic;
     text-align: center;
     transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.CenterTxt:hover {
-    transform: translateY(-13px) 
-}
 
 .containerImgCta{
     position: relative;
@@ -35,8 +33,40 @@
     position: absolute;
 }
 
+
+
+.prospectiveText {
+    display: flex;
+    align-items: center;
+    transition: all 0.45s cubic-bezier(0.76,0,0.24,1);
+    transform-style: preserve-3d;
+  }
+  .prospectiveText p{
+    align-self: center;
+    transition: all 0.45s cubic-bezier(0.76,0,0.24,1);
+  }
+  
+  .prospectiveText p:nth-child(2){
+      position: absolute;
+      transform: rotateX(-90deg) translateY(80px);
+      transform-origin: bottom center;
+  }
+  
+  .prospectiveText:hover {
+    transform: rotateX(90deg);
+  }
+  
+  .prospectiveText p:nth-child(1):hover{
+    transform: rotateY(-100%);
+    opacity: 0;
+  }
+  
+
+
+
+
 @media (min-width: 1025px) and (max-width: 1280px) {
-    .CenterTxt{
+    .prospectiveText p{
         font-size: 100px;
         line-height: 82px;
     }
@@ -51,12 +81,16 @@
         width: 350px;
         height: auto;
     }
+
+    .prospectiveText p:nth-child(2){
+        transform: rotateX(-90deg) translateY(75px);
+    }
   }
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
   
-    .CenterTxt{
+    .prospectiveText p{
         font-size: 85px;
         line-height: 72px;
     }
@@ -71,11 +105,14 @@
         width: 250px;
         height: auto;
     }
+    .prospectiveText p:nth-child(2){
+        transform: rotateX(-90deg) translateY(60px);
+    }
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
   
-    .CenterTxt{
+    .prospectiveText p{
         font-size: 58px;
         line-height: 48px;
     }
@@ -90,10 +127,14 @@
         width: 180px;
         height: auto;
     }
+
+    .prospectiveText p:nth-child(2){
+        transform: rotateX(-90deg) translateY(45px);
+    }
 }  
 
 @media screen and (max-width: 480px)  {
-    .CenterTxt{
+    .prospectiveText p{
         font-size: 11.5vw;
         line-height: 10.5vw;
     }
@@ -108,5 +149,9 @@
         width:  30vw;
         height: auto;
         margin-left: 4%;
+    }
+
+    .prospectiveText p:nth-child(2){
+        transform: rotateX(-90deg) translateY(30px);
     }
 }

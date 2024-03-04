@@ -88,6 +88,7 @@ p {
   font-size: 17.5px;
   line-height: 26px;
 }
+.fill  { fill: var(--dark); }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   h1 {

@@ -5,7 +5,8 @@
     font-weight: 700;
     font-size: 13px;
     letter-spacing: 2px;
-    
+    max-width: 350px;
+
     display: flex;
     align-items:center;
     justify-content: space-around;
@@ -15,7 +16,7 @@
     transition: all 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-.buttonContainer svg {
+.buttonContainer svg,  .buttonContainer img{
     width: 14px;
     fill: #ffffff;
     margin-right: 5px;
@@ -42,7 +43,7 @@
         margin-top: 22px;
     }
 
-    .buttonContainer svg {
+    .buttonContainer svg, .buttonContainer img {
         width: 13px;
     }
 }
@@ -62,7 +63,7 @@
         margin-top: 20px;
         max-width: 100%;
     }
-    .buttonContainer svg {
+    .buttonContainer svg, .buttonContainer img {
         width: 12px;
     }
 }
