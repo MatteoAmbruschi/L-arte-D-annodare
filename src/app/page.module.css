@@ -38,6 +38,7 @@
     font-size: 42px;
     letter-spacing: 2px;
     line-height: 46px;
+    text-align: left;
 }
 
 .spaceIcon p {
@@ -109,7 +110,7 @@
    flex-direction: column;
    align-items: center;
    position: relative;
-   width: 45%;
+   width: 50%;
 }
 
 .contattami hr {
@@ -119,6 +120,9 @@
 .contattami h3 {
    font-size: 17px;
    letter-spacing: 9px;
+}
+.contattami p {
+    text-align: center;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -145,6 +149,19 @@
         width: 80px;
         height: 50px;
     }
+
+    .contattami hr {
+        margin: 17px 0;
+    }
+    
+    .contattami h2 {
+        font-size: 54px;
+        line-height: 54px;
+    }
+    .contattami h3 {
+        font-size: 16.5px;
+        letter-spacing: 8px;
+     }
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -171,7 +188,23 @@
         width: 65px;
         height: 40px;
     }
+
+    .contattami hr {
+        margin: 13px 0;
+    }
     
+    .contattami h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .contattami h3 {
+        font-size: 15px;
+        letter-spacing: 6px;
+     }
+
+     .contattami {
+        width: 40%;
+     }
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
@@ -208,6 +241,22 @@
         flex-direction: column;
     }
     
+    .contattami hr {
+        margin: 17px 0;
+    }
+    
+    .contattami h2 {
+        font-size: 54px;
+        line-height: 54px;
+    }
+    .contattami h3 {
+        font-size: 16.5px;
+        letter-spacing: 7px;
+     }
+     .contattami {
+        margin-top: 55px;
+        width: 100%;
+     }
   }
 
   @media screen and (max-width: 480px) {
@@ -225,7 +274,18 @@
         height: auto;
     }
 
+    .backgroundOverlay{
+        background-position:bottom;
+        background-attachment:scroll;
+    }
 
+    .shapeTop{
+        width: 100%;
+    }
+    
+    .shapeBottom {
+        width: 100%;
+    }
 
     .containerNumbers{
         flex-direction: column;
@@ -257,4 +317,22 @@
     .flexContent {
         flex-direction: column;
     }
+
+
+    .contattami hr {
+        margin: 14px 0;
+    }
+    
+    .contattami h2 {
+        font-size: 12vw;
+        line-height: 12vw;
+    }
+    .contattami h3 {
+        font-size: 14px;
+        letter-spacing: 5px;
+     }
+     .contattami {
+        margin-top: 55px;
+        width: 100%;
+     }
   }

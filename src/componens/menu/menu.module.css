@@ -129,7 +129,7 @@
 
     .menuOpen .navMenu{
         height: calc(100vh - 52px);
-        height: calc(100svh - 44px);
+        height: calc(100dvh - 44px);
         padding: 3% ;
     }
     .navMenu .linkMenu{width: 100%; 

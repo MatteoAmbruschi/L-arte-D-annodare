@@ -3,9 +3,12 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 45%;
-    margin-left: 10%;
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
     box-shadow: 0px 0px 13px 3px rgba(0, 0, 0, 0.17);
+
+    z-index: 2;
 }
 
 .rotateSvg{
@@ -46,10 +49,95 @@
  }
 
  .toggleActive .open, .toggleActiveLavaggio .open, .toggleActiveVendita .open{
-    height: 280px;
     padding: 25px 30px;
  }
+ .toggleActive .open{ height: 270px }
+ .toggleActiveLavaggio .open { height: 245px }
+ .toggleActiveVendita .open { height: 235px }
 
  .toggleActive .rowInfo, .toggleActiveLavaggio .rowInfo, .toggleActiveVendita .rowInfo{
     color: var(--gold);
+ }
+
+
+ 
+ @media (min-width: 1025px) and (max-width: 1280px) {
+   .rowInfo{
+      height: 75px;
+   }
+
+   .toggleActive .open, .toggleActiveLavaggio .open, .toggleActiveVendita .open{
+      padding: 20px 30px;
+   }
+   
+   .toggleActive .open{ height: 315px }
+   .toggleActiveLavaggio .open { height: 295px }
+   .toggleActiveVendita .open { height: 245px }
+ }
+
+ @media (min-width: 768px) and (max-width: 1024px) {
+   .rowInfo{
+      height: 75px;
+      font-size: 21px;
+      line-height: 26px;
+   }
+
+   .open {
+      padding: 0 20px;
+   }
+
+   .toggleActive .open, .toggleActiveLavaggio .open, .toggleActiveVendita .open{
+      padding: 15px 20px;
+   }
+
+   .toggleActive .open{ height: 310px }
+   .toggleActiveLavaggio .open { height: 285px }
+   .toggleActiveVendita .open { height: 245px }
+ }
+
+ @media (min-width: 481px) and (max-width: 767px){
+   .rowInfo{
+      height: 75px;
+   }
+   .column{
+      width: 100%;
+  }
+  .toggleActive .open, .toggleActiveLavaggio .open, .toggleActiveVendita .open{
+   padding: 20px 30px;
+}
+
+   .toggleActive .open{ height: 310px }
+   .toggleActiveLavaggio .open { height: 290px }
+   .toggleActiveVendita .open { height: 245px }
+ }
+
+ 
+ @media screen and (max-width: 480px){
+   .rowInfo{
+      height: 75px;
+      font-size: 21px;
+      line-height: 26px;
+   }
+
+   .column{
+      width: 100%;
+  }
+   .toggleActive .open, .toggleActiveLavaggio .open, .toggleActiveVendita .open{
+      padding: 20px 30px;
+   }
+   
+      .toggleActive .open{ height: 94vw }
+      .toggleActiveLavaggio .open { height: 85vw }
+      .toggleActiveVendita .open { height: 80vw }
+
+   .column p {
+      font-size: 4vw;
+      line-height: 6vw;
+   }
+ }
+
+ @media screen and (max-width: 300px) {
+   .toggleActive .open{ height: 105vw }
+   .toggleActiveLavaggio .open { height: 90vw }
+   .toggleActiveVendita .open { height: 85vw }
  }
