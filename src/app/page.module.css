@@ -72,6 +72,7 @@
     top: -1px;
     overflow: hidden;
     position: absolute;
+    width: 100%;
 }
 
 .shapeTop svg {
@@ -87,6 +88,7 @@
     bottom: -1px;
     overflow: hidden;
     position: absolute;
+    width: 100%;
 }
 
 .shapeBottom svg {
@@ -124,6 +126,48 @@
 .contattami p {
     text-align: center;
 }
+
+.containerMapTxt{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.maps{
+    width: 50%;
+    height: 400px;
+    padding-right: 4%;
+}
+
+.maps iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+.containerPercorso{
+    width: 50%;
+    padding-left: 4%;
+}
+
+.containerPercorso h3{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    letter-spacing: 3px;
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 0px;
+}
+
+.containerPercorso p {
+    text-align: justify;
+    text-align-last: left;
+}
+
+.containerPercorso hr{
+    margin: 28px 0;
+}
+
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
@@ -205,6 +249,39 @@
      .contattami {
         width: 40%;
      }
+
+
+     .containerMapTxt{
+        flex-direction: column;
+    }
+    .maps{
+        width: 100%;
+        height: 350px;
+        padding-right: 0%;
+        margin-bottom: 80px;
+    }
+    
+    
+    .containerPercorso{
+        width: 100%;
+        padding-left: 0%;
+    }
+    
+    .containerPercorso h3{
+        letter-spacing: 3.2px;
+        font-size: 33px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    .containerPercorso p {
+        text-align-last: center;
+    }
+    
+    .containerPercorso hr{
+        margin: 24px 0;
+    }
+
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
@@ -257,6 +334,38 @@
         margin-top: 55px;
         width: 100%;
      }
+
+     .containerMapTxt{
+        flex-direction: column;
+    }
+    .maps{
+        width: 100%;
+        height: 350px;
+        padding-right: 0%;
+        margin-bottom: 75px;
+    }
+    
+    
+    .containerPercorso{
+        width: 100%;
+        padding-left: 0%;
+    }
+    
+    .containerPercorso h3{
+        letter-spacing: 3px;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    .containerPercorso p {
+        text-align-last: center;
+    }
+    
+    .containerPercorso hr{
+        margin: 22px 0;
+    }
+
   }
 
   @media screen and (max-width: 480px) {
@@ -278,15 +387,7 @@
         background-position:bottom;
         background-attachment:scroll;
     }
-
-    .shapeTop{
-        width: 100%;
-    }
     
-    .shapeBottom {
-        width: 100%;
-    }
-
     .containerNumbers{
         flex-direction: column;
     }
@@ -335,4 +436,35 @@
         margin-top: 55px;
         width: 100%;
      }
+
+     .containerMapTxt{
+        flex-direction: column;
+    }
+    .maps{
+        width: 100%;
+        height: 350px;
+        padding-right: 0%;
+        margin-bottom: 65px;
+    }
+    
+    
+    .containerPercorso{
+        width: 100%;
+        padding-left: 0%;
+    }
+    
+    .containerPercorso h3{
+        letter-spacing: 2px;
+        font-size: 27px;
+        line-height: 27px;
+        text-align: center;
+    }
+    
+    .containerPercorso p {
+        text-align-last: center;
+    }
+    
+    .containerPercorso hr{
+        margin: 21px 0;
+    }
   }

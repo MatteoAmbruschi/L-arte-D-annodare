@@ -66,12 +66,12 @@ h4 {
 }
 
 .mainContent {
-  max-width: 1420px;
+  max-width: 1520px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  padding: 100px 50px;
   flex-direction: column;
 }
 
