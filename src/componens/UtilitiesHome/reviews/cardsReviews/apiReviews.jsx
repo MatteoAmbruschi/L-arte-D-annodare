@@ -25,7 +25,11 @@ import { useEffect, useState } from 'react';
 
   function MyReview({ res }) {
     useEffect(() => {
-      console.log(res);  
+      if (res) {
+        console.log(res);
+      } else {
+        console.log("Dati della recensione non disponibili.");
+      }
     }, [res]);
   
     return (
