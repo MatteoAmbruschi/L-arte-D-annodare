@@ -1,5 +1,5 @@
 'use client'
-import { useEffect } from 'react';
+
 
 export async function getStaticProps() {
   const apiKey = 'AIzaSyCIdnqck9F1laYdu4JQt1V3Mk_CVxSwoj8';
@@ -11,6 +11,11 @@ export async function getStaticProps() {
     res = await response.json();
   } catch (error) {
     console.log(error);
+    return {
+      props: {
+        res: null,
+      },
+    };
   }
 
   return {
@@ -20,7 +25,7 @@ export async function getStaticProps() {
   };
 }
 
-function MyReview({ res }) {
+/* function MyReview({ res }) {
   useEffect(() => {
     if (res) {
       console.log(res);
@@ -31,9 +36,9 @@ function MyReview({ res }) {
 
   return (
     <div>
-      funziona??
+      funziona?
     </div>
   );
 }
 
-export default MyReview;
+export default MyReview; */
