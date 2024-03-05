@@ -23,6 +23,7 @@ function GoogleReviews() {
 				{
 					placeId: "ChIJv8DmMDhXgUcRHryN6sOp40Y",
 					fields: ["reviews"],
+          language: "it"
 				},
 
 				(place, status) => {
