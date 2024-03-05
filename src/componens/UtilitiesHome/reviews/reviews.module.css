@@ -2,9 +2,8 @@
     background-image: linear-gradient(40deg, #1D1D1D 33%, #000000 0%);
     border-style: solid;
     border-width: 0 0 60px 0;
-    border-color: #1c1c1c;
-    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    padding: 60px;
+    border-color: var(--dark);
+    padding: 60px 0;
     position: relative;
 }
 
@@ -46,10 +45,41 @@
     align-items: start;
 }
 
+.containerReviews h2,  .containerReviews h3{
+    text-align: left;
+}
+
 .containerReviews a {
     align-self: flex-end;
 }
 
-.cards{
-    height: 200px;
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .containerReviews h2 {
+        font-size: 52px;
+        line-height: 52px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .containerReviews h2 {
+        font-size: 48px;
+        letter-spacing: 0.4px;
+        line-height: 48px;
+      }  
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .containerReviews h2 {
+        font-size: 40px;
+        letter-spacing: 0.2px;
+        line-height: 40px;
+      }  
+}
+
+@media screen and (max-width: 480px){
+    .containerReviews h2 {
+        font-size: 11.5vw;
+        letter-spacing: 0.2px;
+        line-height: 11.5vw;
+      }  
 }

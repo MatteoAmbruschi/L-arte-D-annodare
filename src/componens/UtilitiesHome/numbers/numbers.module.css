@@ -1,0 +1,114 @@
+
+.containerNumbers{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.sectionNumbers{
+    display: flex;
+    align-items: center;
+}
+.spaceIcon {
+    padding-left: 15px;
+}
+
+.spaceIcon h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 42px;
+    letter-spacing: 2px;
+    line-height: 46px;
+    text-align: left;
+}
+
+.spaceIcon p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 56px;
+    letter-spacing: 2px;
+    line-height: 70px;
+    font-style: italic;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) { 
+    .spaceIcon h3 {
+        font-size: 36px;
+        letter-spacing: 1.8px;
+        line-height: 38px;
+    }
+    
+    .spaceIcon p {
+        font-size: 46px;
+        letter-spacing: 1.8px;
+        line-height: 60px;
+    }
+    .sectionNumbers img {
+        width: 80px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .spaceIcon h3 {
+        font-size: 30px;
+        letter-spacing: 1.6px;
+        line-height: 34px;
+    }
+    
+    .spaceIcon p {
+        font-size: 40px;
+        letter-spacing: 1.6px;
+        line-height: 52px;
+    }
+    .sectionNumbers img {
+        width: 65px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .spaceIcon h3 {
+        font-size: 20px;
+        letter-spacing: 1.2px;
+        line-height: 24px;
+    }
+    
+    .spaceIcon p {
+        font-size: 30px;
+        letter-spacing: 1.2px;
+        line-height: 36px;
+    }
+    .sectionNumbers img {
+        width: 50px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .spaceIcon h3 {
+        font-size: 30px;
+        letter-spacing: 1.6px;
+        line-height: 34px;
+    }
+    
+    .spaceIcon p {
+        font-size: 40px;
+        letter-spacing: 1.6px;
+        line-height: 52px;
+    }
+    .sectionNumbers img {
+        width: 65px;
+        height: 40px;
+    }
+
+    .containerNumbers{
+        flex-direction: column;
+    }
+
+    .sectionNumbers:nth-child(1){
+        margin-bottom: 25px;
+    }
+    .sectionNumbers:nth-child(2){
+        margin-top: 25px;
+    }
+}

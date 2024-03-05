@@ -1,5 +1,6 @@
 import styles from './reviews.module.css'
-import Button from '../button/Button'
+import Button from '../../button/Button'
+import CardsReviews from './cardsReviews/CardsReviews'
 
 function Reviews () {
     const svg = './star.svg'
@@ -17,7 +18,7 @@ function Reviews () {
                 <h3>L&apos;ARTE D&apos;ANNODARE</h3>
                 <h2>LE RECENSIONI DEI NOSTRI CLIENTI</h2>
 
-                <div className={styles.cards}>  </div>
+                <CardsReviews />
 
                 <Button text={'LASCIA UNA RECENSIONE'} imgUrl={svg} />
             </div>
