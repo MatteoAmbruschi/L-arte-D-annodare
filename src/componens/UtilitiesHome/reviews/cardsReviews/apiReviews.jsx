@@ -7,30 +7,31 @@ import { useEffect, useState } from 'react';
     const placeID = 'ChIJv8DmMDhXgUcRHryN6sOp40Y';
     let res = null;
   
-    try {
-      const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJv8DmMDhXgUcRHryN6sOp40Y&fields=reviews&language=it&key=AIzaSyCIdnqck9F1laYdu4JQt1V3Mk_CVxSwoj8`)
-    
-      res = await response.json();
-    } catch (error) {
-      console.log(error);
+    const response = await fetch('/reviewsGoogle', {
+      method: "GET",
+      mode: "cors",
+      headers: new Headers({
+        "Content-Type": "application/json",
+      }),
+    });
+
+    if (response.ok) {
+      const res = await response.json();
+      console.log(res);
+    } else {
+      console.log(`Errore nella richiesta: ${response.statusText}`);
     }
-  
-    return {
-      props: {
-        res,
-      },
-    };
   }
 
 
-  function MyReview({ res }) {
+  function MyReview({ response }) {
     useEffect(() => {
-      if (res) {
-        console.log(res);
+      if (response) {
+        console.log(response);
       } else {
         console.log("Dati della recensione non disponibili.");
       }
-    }, [res]);
+    }, [response]);
   
     return (
       <div>
