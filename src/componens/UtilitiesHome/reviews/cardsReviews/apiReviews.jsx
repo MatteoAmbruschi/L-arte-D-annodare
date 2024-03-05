@@ -18,7 +18,7 @@ export async function getStaticProps() {
 
   function MyReview({ json }) {
     useEffect(() => {
-      console.log(getStaticProps());  
+      console.log(json);  
     }, [json]);
   
     return (
