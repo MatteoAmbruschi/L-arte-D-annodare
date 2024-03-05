@@ -23,10 +23,10 @@ import { useEffect, useState } from 'react';
   }
 
 
-  function MyReview({ json }) {
+  function MyReview({ res }) {
     useEffect(() => {
-      console.log(json);  
-    }, [json]);
+      console.log(res);  
+    }, [res]);
   
     return (
       <div>
