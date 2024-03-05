@@ -77,6 +77,9 @@
 }
 
 @media screen and (max-width: 480px){
+    .backgroundOverlay {
+        background-attachment:scroll;
+    }
     .containerReviews h2 {
         font-size: 11.5vw;
         letter-spacing: 0.2px;
