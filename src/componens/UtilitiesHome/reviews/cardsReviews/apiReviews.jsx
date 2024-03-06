@@ -8,7 +8,7 @@ const libraries = ["places"]; // IMPORTING 'PLACES' LIBRARY FROM GOOGLE MAPS
 function GoogleReviews() {
 	const [reviews, setReviews] = useState([]);
 	const { isLoaded, loadError } = useLoadScript({
-		googleMapsApiKey: "AIzaSyCIdnqck9F1laYdu4JQt1V3Mk_CVxSwoj8", 
+		googleMapsApiKey: "AIzaSyDEUdbe6tunk1uWgOPE_3lNNrBNmv7Eyv4", 
 		libraries,
 	});
 
