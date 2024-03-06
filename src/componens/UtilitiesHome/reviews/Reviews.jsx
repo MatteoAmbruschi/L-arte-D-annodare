@@ -18,7 +18,7 @@ function Reviews () {
                 <h3>L&apos;ARTE D&apos;ANNODARE</h3>
                 <h2>LE RECENSIONI DEI NOSTRI CLIENTI</h2>
 
-                <CardsReviews />
+                {/* <CardsReviews /> */}
 
                 <Button text={'LASCIA UNA RECENSIONE'} imgUrl={svg} />
             </div>

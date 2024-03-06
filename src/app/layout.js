@@ -1,6 +1,7 @@
 import "./globals.css";
 
-import Menu from "@/componens/menu/Menu";;
+import Menu from "@/componens/menu/Menu";
+import Footer from "@/componens/footer/Footer"
 
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         <Menu />
             {children}
+          <Footer />
         </body>
     </html>
   );
