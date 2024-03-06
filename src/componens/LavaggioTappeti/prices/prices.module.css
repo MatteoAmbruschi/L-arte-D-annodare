@@ -1,0 +1,95 @@
+.pulizia{
+    font-size: 45px;
+    font-style: italic;
+}
+
+.table{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3b3b3b;
+    align-items: baseline;
+    width: 100%;
+    padding: 3px 20px;
+    margin-top: 20px;
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif ;
+}
+.table p {
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif ;
+    padding-left: 10%;
+    line-height: normal;
+}
+
+.table h4 {
+    text-align: left;
+    text-align-last: left;
+}
+
+.table span {
+    font-size: 15px;
+}
+
+.margTop30 {
+    margin-top: 40px;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .pulizia{
+        font-size: 42px;
+    }
+    .table{
+        padding: 0 18px;
+    }
+    .margTop30 {
+        margin-top: 35px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .pulizia{
+        font-size: 40px;
+    }
+    .table{
+        padding: 0 17px;
+        margin-top: 18px;
+    }
+    .margTop30 {
+        margin-top: 30px;
+    }
+    .table span {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .pulizia{
+        font-size: 35px;
+    }
+    .table{
+        padding: 0 16px;
+        margin-top: 17px;
+    }
+    .margTop30 {
+        margin-top: 27px;
+    }
+    .table span {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .pulizia{
+        font-size: 30px;
+    }
+    .table{
+        padding: 0 14px;
+        margin-top: 15px;
+    }
+    .margTop30 {
+        margin-top: 24px;
+    }
+
+    .table span {
+        font-size: 12px;
+    }
+}

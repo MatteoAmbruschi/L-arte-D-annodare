@@ -2,6 +2,9 @@ import styles from './numbers.module.css'
 import Image from 'next/image';
 
 function Numbers () {
+  const date = new Date();
+  let year = date.getFullYear()
+  let anniSettore = year - 1987
 
     return (
         <div className='mainContent'>
@@ -18,7 +21,7 @@ function Numbers () {
             <Image src='/person.svg' width='100' height='60' alt='persona icona' />
             <div className={styles.spaceIcon}>
               <h3>Anni Nel Settore</h3>
-              <p>35</p>
+              <p>{anniSettore}</p>
             </div>
           </div>
         </div>

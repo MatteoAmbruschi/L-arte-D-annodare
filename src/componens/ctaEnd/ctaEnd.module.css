@@ -1,0 +1,36 @@
+.containerElement{
+    background-image: linear-gradient(350deg, #1C1C1C 55%, #000000 0%);
+    position: relative;
+}
+
+.backgroundOverlay{
+    background-attachment: fixed;
+    filter: brightness(86%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+    background-image: url(https://www.lartedannodare.it/wp-content/uploads/2022/07/lavaggio-tappeto.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.45;
+    mix-blend-mode: screen;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.shape{
+    transform: rotate(180deg);
+    bottom: -1px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.shape svg {
+    height: 330px;
+    width: 100%;
+    position: relative;
+}
+
+.containerCta {
+    position: relative;
+}

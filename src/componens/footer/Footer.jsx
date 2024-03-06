@@ -6,8 +6,13 @@ function Footer (){
 
     return (
         <div className={`mainContent ${styles.footer}`}>
+            <meta
+                name="format-detection"
+                content="telephone=no, date=no, email=no, address=no"
+            />
+
             <div className={styles.info}>
-                <p><strong>Via:</strong> Corso Roma, 26 – 24068 – Seriate (BG)</p>
+                <p><strong>Via:</strong> Corso Roma 26 - 24068 - Seriate (BG)</p>
                 <p><strong>Telefono:</strong> 3297342685 / 035 4536671</p>
                 <p><strong>Partita Iva:</strong> 04107640163</p>
             </div>
