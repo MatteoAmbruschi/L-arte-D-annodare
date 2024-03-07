@@ -104,6 +104,11 @@ p {
 
 p a {
   color: var(--gold);
+  transition: all 0.3s cubic-bezier(0.77,0.2,0.05,1.0); 
+}
+
+p a:hover {
+  color: var(--red);
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {

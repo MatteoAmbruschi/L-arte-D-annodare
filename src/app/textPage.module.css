@@ -70,6 +70,12 @@
      .textPage p {
         margin: 13px 0;
     }
+    .textPage h3 {
+        font-size: 	14.2px;
+        line-height: 18px;
+        padding-bottom: 10px;
+        letter-spacing: 3.8px;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -88,5 +94,13 @@
 
      .textPage p {
         margin: 12px 0;
+    }
+
+    .textPage h3 {
+        font-size: 	13px;
+        line-height: 17px;
+        padding-bottom: 10px;
+        letter-spacing: 3.6px;
+        text-align: left;
     }
 }

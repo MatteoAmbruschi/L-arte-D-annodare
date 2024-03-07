@@ -93,13 +93,12 @@
 
 
 .dropDownActive .underMenu{
-    height: 170px;
+    height: 163px;
     padding: 0.5%;
 }
 
 .underMenu p{
     width: 100%;
-    font-size: 20px;
  }
 
  .rotateSvg{
@@ -109,6 +108,9 @@
     transform: rotate(-180deg);
  }
  
+ .active p{
+    color: var(--red);
+ }
 
 @media screen and (max-width: 1024px){
 
@@ -181,8 +183,20 @@
     .navContainer {
         height: 47px;
     }
-    
-    .underMenu p{
-        font-size: 17px;
-     }
+
+    .dropDownActive .underMenu{
+        height: 160px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .dropDownActive .underMenu{
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .dropDownActive .underMenu{
+        height: 160px;
+    }
 }

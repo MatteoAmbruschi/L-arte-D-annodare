@@ -3,14 +3,14 @@ function InitialText () {
 
     return (
         <>
-            <h3 TUTTO>SCOPRI TUTTO</h3>
+            <h3>SCOPRI TUTTO</h3>
             <h2>Un Modo diverso di essere &quot;Tappetaio&quot;</h2>
             <hr />
             <p>
                 Nella concezione corrente <strong>“tappetaio”</strong> è spesso sinonimo di <strong>“venditore di tappeti”</strong>, modo di dire con connotazione spregiativa di chi, senza troppe remore morali ed etiche, cerca di trarre l&apos;immediato e maggior profitto possibile dalla vendita. Personalmente mi sento lontanissimo da tale definizione.
             </p>
             <p>
-                Sin da quando ho intrapreso questa professione sono stato attratto dal fascino <strong>dei <Link href="https://it.wikipedia.org/wiki/Tappeto#:~:text=In%20Oriente%2C%20il%20tappeto%20ha,Pazyryk%20(circa%20500%20a.C.)." target="blank">tappeti</Link> a motivo della loro storia, colori, tecnica, simbologia</strong> e spesso anche per quello che possono rammentare nel nostro ambito familiare.
+                Sin da quando ho intrapreso questa professione sono stato attratto dal fascino <strong>dei <Link href="https://it.wikipedia.org/wiki/Tappeto#:~:text=In%20Oriente%2C%20il%20tappeto%20ha,Pazyryk%20(circa%20500%20a.C.)." target="_blank">tappeti</Link> a motivo della loro storia, colori, tecnica, simbologia</strong> e spesso anche per quello che possono rammentare nel nostro ambito familiare.
             </p>
             <p>
             L&apos;origine della tessitura si perde nella notte dei tempi, infatti ritroviamo nella cultura di molti popoli il ricordo di antiche divinità che annodavano con i loro telai il destino degli umani. E un aspetto fortemente spirituale il tappeto l&apos;ha sempre mantenuto e non soltanto presso le <strong>popolazioni islamiche, ma anche presso gli Armeni, Ebrei, Cristiani, Zoroastriani ecc.</strong> che hanno tramandato per secoli, simboli e disegni non codificabili dai non iniziati.
