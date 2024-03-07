@@ -6,11 +6,11 @@
 .backgroundOverlay{
     background-attachment: fixed;
     filter: brightness(86%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
-    background-image: url(https://www.lartedannodare.it/wp-content/uploads/2022/07/lavaggio-tappeto.jpg);
+    background-image: url('/lavaggio-tappeto.webp');
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.45;
+    opacity: 0.40;
     mix-blend-mode: screen;
     height: 100%;
     width: 100%;
@@ -33,4 +33,44 @@
 
 .containerCta {
     position: relative;
+}
+
+.ctaTitle{
+    font-size: 65px;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .ctaTitle{
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .ctaTitle{
+        font-size: 55px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .ctaTitle{
+        font-size: 45px;
+    }
+    .containerElement hr{
+        margin: 30px 0;
+      }
+}
+
+@media screen and (max-width: 480px){
+    .ctaTitle{
+        font-size: 12vw;
+        line-height: 12vw;
+    }
+    .backgroundOverlay{
+        background-attachment:scroll;
+        background-position:bottom;
+    }
+
+   .containerElement hr{
+        margin: 24px 0;
+      }
 }

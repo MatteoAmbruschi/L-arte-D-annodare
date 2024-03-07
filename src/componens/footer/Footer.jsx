@@ -27,12 +27,12 @@ function Footer (){
             
             <div className={styles.contact}>
                 <p>L&apos;Arte d&apos;Annodare</p>
-                <a target='blank' href='https://www.facebook.com/ArteDiAnnodare'><Image src='/facebook.svg' width='40' height='40' alt='icon facebook' /></a>
+                <Link target='blank' href='https://www.facebook.com/ArteDiAnnodare'><Image src='/facebook.svg' width='40' height='40' alt='icon facebook' /></Link>
             </div>
 
             <div className={styles.contact}>
                 <p>ambru63@katamail.com</p>
-                <a target='blank' href="mailto:ambru63@katamail.com"><Image src='/email.svg' width='40' height='40' alt='icon email' /></a>
+                <Link target='blank' href="mailto:ambru63@katamail.com"><Image src='/email.svg' width='40' height='40' alt='icon email' /></Link>
             </div>
         </div>
     )

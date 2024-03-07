@@ -1,5 +1,5 @@
 import Header from "@/componens/header/Header"
-import styles from './lavaggioTappeti.module.css'
+import styles from '../textPage.module.css'
 import InitialText from "@/componens/LavaggioTappeti/initalText/InitialText";
 import Prices from "@/componens/LavaggioTappeti/prices/Prices";
 import CtaEnd from "@/componens/ctaEnd/CtaEnd";
@@ -11,7 +11,7 @@ const LavaggioTappeti = () => {
         <>
             <Header imgHead={"/lavaggio.webp"} title={'LAVAGGIO TAPPETI'} subTitle={"NEGOZIO DI TAPPETI"} text={textHead} button={true} />
             
-            <div className={`mainContent ${styles.containerLavaggio}`}>
+            <div className={`mainContent ${styles.textPage}`}>
 
                 <InitialText />
                 

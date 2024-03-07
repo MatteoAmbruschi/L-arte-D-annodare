@@ -13,7 +13,7 @@ function CtaEnd() {
             </div>
             <div className={`mainContent ${styles.containerCta}`}>
                 <h3>NEGOZIO DI TAPPETI</h3>
-                <h6>VIENI A TROVARCI</h6>
+                <h6 className={styles.ctaTitle}>VIENI A TROVARCI</h6>
                 <hr />
                 <Button />
             </div>

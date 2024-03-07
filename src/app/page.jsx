@@ -1,6 +1,5 @@
 import Header from '@/componens/header/Header';
 import Head from 'next/head'
-import styles from './page.module.css'
 import CarpetsSlide from '@/componens/UtilitiesHome/carpetsSlide/CarpetsSlide';
 import CtaNegozio from '@/componens/UtilitiesHome/ctaNegozio/CtaNegozio';
 import Reviews from '@/componens/UtilitiesHome/reviews/Reviews';

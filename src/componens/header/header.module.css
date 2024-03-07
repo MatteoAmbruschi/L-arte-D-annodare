@@ -9,7 +9,7 @@
 
 .img{
     width: 100%;
-    min-height: 685px; 
+    min-height: 740px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,6 +46,7 @@
     align-items: center;
     flex-direction: column;
     width: 1050px;
+    padding-top: 30px;
 }
 
 .hr{
@@ -63,9 +64,10 @@
 @media (min-width: 1025px) and (max-width: 1280px) {
     .containerText{
         width: 750px;
+        padding-top: 55px;
     }
     .img{
-        min-height: 605px; 
+        min-height: 655px; 
     }
     .containerText h3 {
         letter-spacing: 8px;
@@ -75,9 +77,10 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .containerText{
         width: 615px;
+        padding-top: 53px;
     }
     .img{
-        min-height: 585px;
+        min-height: 627px;
         background-position:bottom;
         background-attachment:scroll;
     }
@@ -89,9 +92,10 @@
 @media screen and (max-width: 767px){
     .containerText{
         width: 85%;
+        padding-top: 53px;
     }
     .img{
-        min-height: 585px;
+        min-height: 627px;
         background-position:bottom;
         background-attachment:scroll;
     }

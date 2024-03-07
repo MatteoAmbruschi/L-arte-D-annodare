@@ -3,15 +3,34 @@
 import Link from 'next/link'
 import styles from './menu.module.css'
 import Image from "next/image";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Menu = () => {
 
     const [toggle, setToggle] = useState(false)
     const [dropDownToggle, setDropDownToggle] = useState(false)
+    const [showNav, setShowNav] = useState(false)
+
+
+    useEffect(() => {
+        let lastScrollTop = 0;
+       /*  if(window.innerWidth > window.innerHeight){ */
+            window.addEventListener("scroll", function(){ 
+            let st = window.scrollY || document.documentElement.scrollTop;
+
+            if (st > lastScrollTop) {
+                setShowNav(true)
+            } else if (st < lastScrollTop) {
+                setShowNav(false)
+            }
+            lastScrollTop = st <= 0 ? 0 : st;
+            }, true);
+      /*    }  */
+    }, []);
+
 
     return (
-        <nav className={`${styles.nav} ${toggle ? styles.menuOpen : ''}`}>
+        <nav className={`${styles.nav} ${toggle ? styles.menuOpen : ''}`} style={{ transform: showNav ? "translateY(-56px)" : "translateY(0px)" }}>
             <div className={styles.navContainer}>
             
             <Link href="/" className={styles.logoMenu} onClick={() => setToggle(false)}>
