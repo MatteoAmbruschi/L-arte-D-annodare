@@ -1,0 +1,69 @@
+.containerCtaM {
+    background-image: linear-gradient(220deg,#1C1C1C 54%,#000000 0%);
+    padding: 40px 0 40px 0;
+    position: relative;
+}
+
+.imgOverlay{
+    background-attachment: fixed;
+    filter: brightness(25%) contrast(100%) saturate(100%) blur(0) hue-rotate(0deg);
+    background-image: url('/tappeto-salotto.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: screen;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.shapeTop {
+    top: -1px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+.shapeTop svg{
+    width: 100%;
+    position: relative;
+    height: 112px;
+}
+
+.shapeBottom {
+    transform: rotate(180deg);
+    bottom: -1px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.shapeBottom svg {
+    height: 98px;
+    transform: rotateY(180deg);
+    position: relative;
+    width: 100%;
+}
+
+.textContainer{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.containerText {
+    position: relative;
+    width: 50%;
+}
+
+.containerText h2 {
+    text-align: left;
+}
+
+.maps {
+    width: 50%;
+}

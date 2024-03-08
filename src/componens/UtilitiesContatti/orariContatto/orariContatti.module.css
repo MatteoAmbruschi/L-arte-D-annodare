@@ -1,0 +1,176 @@
+.containerOrari{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.containerOrari h6 {
+    text-align: start;
+    padding-bottom: 15px;
+}
+
+.containerOrari li{
+    text-decoration: none;
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif ;
+    list-style: none;
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.iconText {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    border-right: 1px solid var(--gold);
+}
+
+.iconText svg {
+    margin: 50px 30px 0 0;
+}
+
+.iconText svg path {
+ stroke: var(--gold);
+}
+
+.colorDay{
+ color: var(--gold);
+font-style: italic;
+}
+
+.contattiContainer ul li a{
+    display: flex;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.77,0.2,0.05,1.0); 
+}
+
+.contattiContainer ul li a:hover{
+    color: var(--gold);
+}
+
+.contattiContainer ul li a img{
+    margin-right: 13px;
+}
+
+.contattiContainer{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .containerOrari h6 {
+        padding-bottom: 14px;
+    }
+    .containerOrari li{
+        margin: 15px 0;
+        font-size: 17px;
+    }
+
+    .iconText svg {
+        margin: 50px 15px 0 0;
+    }
+    .contattiContainer ul li a img{
+        margin-right: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .containerOrari{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerOrari h6 {
+        padding-bottom: 15px;
+    }
+
+    .iconText {
+        width: 100%;
+        border-right: none;
+    }
+
+    .iconText svg {
+        display: none;
+    }
+
+    .contattiContainer{
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .hr {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .containerOrari{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerOrari h6 {
+        padding-bottom: 15px;
+    }
+
+    .iconText {
+        width: 100%;
+        border-right: none;
+    }
+
+    .iconText svg {
+        display: none;
+    }
+
+    .contattiContainer{
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .containerOrari li{
+        font-size: 17px;
+    }
+    .hr {
+        margin-bottom: 0;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .containerOrari{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerOrari h6 {
+        padding-bottom: 15px;
+    }
+
+    .iconText {
+        width: 100%;
+        border-right: none;
+    }
+
+    .iconText svg {
+        display: none;
+    }
+
+    .contattiContainer{
+        margin-top: 35px;
+        width: 100%;
+    }
+
+    .containerOrari li{
+        font-size: 15px;
+    }
+
+    .contattiContainer ul li a img{
+        margin-right: 5px;
+        width: 25px;
+        height: 25px;
+    }
+    .hr {
+        margin-bottom: 0;
+    }
+}
