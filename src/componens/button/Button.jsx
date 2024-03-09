@@ -2,10 +2,10 @@ import styles from './button.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
-function Button({ text = 'CONTATTAMI', imgUrl}) {
+function Button({ text = 'CONTATTAMI', imgUrl, link = "/contatti"}) {
 
     return (
-        <Link href="/contatti" className={styles.buttonContainer}>
+        <Link href={link} className={styles.buttonContainer}>
                 {imgUrl ? 
                 <Image src={`${imgUrl}`} width='12' height='12' alt='icona' /> : 
                 (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

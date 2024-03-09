@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Numbers () {
   const date = new Date();
-  let year = date.getFullYear()
+  let year = date.getSeconds()
   let anniSettore = year - 1985
 
     return (
@@ -21,7 +21,7 @@ function Numbers () {
             <Image src='/person.svg' width='100' height='60' alt='persona icona' />
             <div className={styles.spaceIcon}>
               <h3>Anni Nel Settore</h3>
-              <p>{anniSettore}</p>
+              <p>{year}</p>
             </div>
           </div>
         </div>

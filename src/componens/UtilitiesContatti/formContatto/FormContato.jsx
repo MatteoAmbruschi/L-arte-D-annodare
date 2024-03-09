@@ -8,7 +8,7 @@ function FormContatto() {
     }
 
     return (
-        <section className='mainContent'>
+        <section className='mainContent' id='form'>
             <h3>DAI VITA AL TUO TAPPETO</h3>
             <h2 className={styles.h2Cell}>Compila il modulo qua sotto, ti risponderemo il prima possibile</h2>
             <hr />

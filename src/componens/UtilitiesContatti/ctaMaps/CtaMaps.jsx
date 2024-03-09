@@ -17,23 +17,24 @@ function CtaMaps() {
             </svg>
             </div>
 
+
             <div className={`mainContent ${styles.textContainer}`}>
                 <div className={styles.containerText}>
                     <h2>Vieni a trovarci</h2>
-                    <hr />
+                    <hr className={styles.hr} />
                     <p>Ti accoglieremo in negozio, per aiutarti al meglio nell&apos;acquisto di un nuovo tappeto, o per restaurare e lavare il tuo tappeto</p>
-                    <Button />
+                    <Button imgUrl={'/up-arrow.svg'} link={'#form'} />
                 </div>
 
-                <div className={styles.maps}>
+                <div className={styles.maps} id='maps'>
                 <iframe 
                     loading="lazy" frameBorder="0" scrolling="no"
                     title="Via: Corso Roma, 26 24068 - Seriate (BG)" aria-label="Via: Corso Roma, 26 24068 - Seriate (BG)" 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89177.34947416173!2d9.693071963854118!3d45.695142621738505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781573830e6c0bf%3A0x46e3a9c3ea8dbc1e!2sL&#39;Arte%20D&#39;Annodare!5e0!3m2!1sit!2sit!4v1709548559450!5m2!1sit!2sit" 
                     />
                 </div>
-
             </div>
+
         </section>
     )
 }

@@ -31,7 +31,7 @@ function OrariContatti() {
                     <div>
                         <h6>Contatti</h6>
                         <ul>
-                            <li><Link href='#'><Image src='/position.svg' width='30' height='30' alt='icona posizione' />CORSO ROMA, 26 24068 - SERIATE (BG)</Link></li>
+                            <li><Link href='#maps'><Image src='/position.svg' width='30' height='30' alt='icona posizione' />CORSO ROMA, 26 24068 - SERIATE (BG)</Link></li>
                             <li><Link href='tel:3297342685'><Image src='/phone.svg' width='30' height='30' alt='icona telefono/cellulare' />3297342685 / 035 4536671</Link></li>
                             <li><Link href='mailto:ambru63@katamail.com'><Image src='/emailicon.svg' width='30' height='30' alt='icona email' />AMBRU63@KATAMAIL.COM</Link></li>
                         </ul>

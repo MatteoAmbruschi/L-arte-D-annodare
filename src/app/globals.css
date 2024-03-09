@@ -13,6 +13,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   background: var(--dark);
   color: var(--light);
   font-family: 'Times New Roman', Times, serif, 'Segoe UI', Geneva, Verdana, sans-serif;
