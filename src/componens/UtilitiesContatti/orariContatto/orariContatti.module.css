@@ -17,27 +17,6 @@
     font-size: 18px;
 }
 
-.iconText {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    justify-content: center;
-    border-right: 1px solid var(--gold);
-}
-
-.iconText svg {
-    margin: 50px 30px 0 0;
-}
-
-.iconText svg path {
- stroke: var(--gold);
-}
-
-.colorDay{
- color: var(--gold);
-font-style: italic;
-}
-
 .contattiContainer ul li a{
     display: flex;
     align-items: center;
@@ -67,9 +46,6 @@ font-style: italic;
         font-size: 17px;
     }
 
-    .iconText svg {
-        margin: 50px 15px 0 0;
-    }
     .contattiContainer ul li a img{
         margin-right: 12px;
     }
@@ -83,15 +59,6 @@ font-style: italic;
 
     .containerOrari h6 {
         padding-bottom: 15px;
-    }
-
-    .iconText {
-        width: 100%;
-        border-right: none;
-    }
-
-    .iconText svg {
-        display: none;
     }
 
     .contattiContainer{
@@ -112,15 +79,6 @@ font-style: italic;
 
     .containerOrari h6 {
         padding-bottom: 15px;
-    }
-
-    .iconText {
-        width: 100%;
-        border-right: none;
-    }
-
-    .iconText svg {
-        display: none;
     }
 
     .contattiContainer{
@@ -145,15 +103,6 @@ font-style: italic;
 
     .containerOrari h6 {
         padding-bottom: 15px;
-    }
-
-    .iconText {
-        width: 100%;
-        border-right: none;
-    }
-
-    .iconText svg {
-        display: none;
     }
 
     .contattiContainer{

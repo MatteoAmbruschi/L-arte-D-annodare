@@ -1,8 +1,10 @@
-import MyReview from './apiReviews';
+import styles from './cardReviews.module.css'
 
 function CardsReviews() {
   return (
-    <MyReview />
+    <div className={`mainContent ${styles.cards}`}>
+      ciao
+    </div>
   );
 }
 
