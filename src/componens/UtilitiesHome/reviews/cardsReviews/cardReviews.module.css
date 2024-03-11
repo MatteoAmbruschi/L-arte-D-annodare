@@ -1,3 +1,222 @@
-.cards{
+.splider{
+    background-color: none !important;
+    width: 96%;
+    margin: 60px 0px;
+    margin-left: 2%;
+    }
+
+.splideSlide{
+   margin-bottom: 25px;
+    padding: 0 5px;
+    transition: all 0.45s cubic-bezier(0.77,0.2,0.05,1.0); 
+    width: 30% !important;
+    scale: .9;
+  }
+  
+  
+.backgroundContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    background-color: var(--light) ;
+    color: var(--dark);
+    min-height: 355px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.backgroundContainer h6 {
+    font-size: 30px !important;
+    line-height: 30px !important;;
+    text-align: left;
+    color: var(--dark);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.backgroundContainer hr {
+    z-index: 1;
+    margin: 23px 0;
+}
+
+.backgroundContainer p {
+    text-align: justify;
+    text-align-last: left;
+    color: var(--dark);
+    font-style: italic;
+    z-index: 1;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.txtStars {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 50px;
+    padding-top: 5px;
+    z-index: 1;
+}
+
+.backgroundImg {
+    position: absolute;
+    z-index: 0;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .splider{
+        margin: 50px 0px;
+        }
     
+    .splideSlide{
+       margin-bottom: 25px;
+        padding: 0 5px;
+        width: 31% !important;
+      }
+      
+    .backgroundContainer{
+        padding: 10px 15px;
+        min-height: 355px;
+        height: auto;
+    }
+    
+    .backgroundContainer h6 {
+        font-size: 24px !important;
+        line-height: 24px !important;
+        letter-spacing: 0.2px;
+    }
+    
+    
+    .backgroundContainer p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .txtStars {
+        height: 30px;
+    }
+    .backgroundContainer hr {
+        margin: 22px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .splider{
+        margin: 50px 0px;
+        width: 96%;
+        margin-left: 2%;
+        }
+    
+    .splideSlide{
+       margin-bottom: 25px;
+        padding: 0 5px;
+        width: 45% !important;
+      }
+      
+    .backgroundContainer{
+        padding: 10px 15px;
+        min-height: 330px;
+        height: auto;
+    }
+    
+    .backgroundContainer h6 {
+        font-size: 22px !important;
+        line-height: 22px !important;
+        letter-spacing: 0.2px;
+    }
+    
+    
+    .backgroundContainer p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .txtStars {
+        height: 30px;
+    }
+    .backgroundContainer hr {
+        margin: 22px 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .splider{
+        margin: 50px 0px;
+        width: 100%;
+        margin-left: 0%;
+        }
+    
+    .splideSlide{
+       margin-bottom: 25px;
+        padding: 0 5px;
+        width: 60% !important;
+      }
+      
+    .backgroundContainer{
+        padding: 10px 15px;
+        min-height: 360px;
+        height: auto;
+    }
+    
+    .backgroundContainer h6 {
+        font-size: 22px !important;
+        line-height: 22px !important;
+        letter-spacing: 0.2px;
+    }
+    
+    
+    .backgroundContainer p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .txtStars {
+        height: 30px;
+    }
+    .backgroundContainer hr {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .splider{
+        margin: 50px 0px;
+        width: 100%;
+        margin-left: 0%;
+        }
+    
+    .splideSlide{
+       margin-bottom: 20px;
+        padding: 0 5px;
+        width: 75% !important;
+      }
+      
+    .backgroundContainer{
+        padding: 10px 15px;
+        min-height: 340px;
+        height: auto;
+    }
+    
+    .backgroundContainer h6 {
+        font-size: 20px !important;
+        line-height: 20px !important;
+        letter-spacing: 0.2px;
+    }
+    
+    
+    .backgroundContainer p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .txtStars {
+        height: 25px;
+    }
+    .backgroundContainer hr {
+        margin: 20px 0;
+    }
 }

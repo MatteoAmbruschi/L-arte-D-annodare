@@ -55,6 +55,13 @@
     font-weight: lighter;
 }
 
+
+.isError {
+    border: 1px solid red !important;
+}
+
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .contactForm {
         padding: 15px 40px;

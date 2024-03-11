@@ -112,6 +112,28 @@ p a:hover {
   color: var(--red);
 }
 
+.is-active {
+    scale: 1 !important;
+  }
+
+.splide__arrow--prev{
+    left: -2rem !important;
+}
+
+.splide__arrow--next{
+  right: -2rem !important;
+}
+
+.splide__arrow {
+  transition: all 0.3s cubic-bezier(0.77,0.2,0.05,1.0); 
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.splide__arrow svg {
+  fill: var(--dark) !important;
+}
+
 @media (min-width: 1025px) and (max-width: 1280px) {
   h1 {
     font-size: 100px;
@@ -205,6 +227,11 @@ p a:hover {
   .mainContent {
     padding: 80px 5%;
   }
+  .splide__arrow {
+    transition: all 0.3s cubic-bezier(0.77,0.2,0.05,1.0); 
+    width: 22px !important;
+    height: 22px !important;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px){
@@ -251,6 +278,10 @@ p a:hover {
 
   .mainContent {
     padding: 80px 5%;
+  }
+
+  .splide__arrow {
+    display: none !important;
   }
 }
 
@@ -299,5 +330,9 @@ p a:hover {
 
   .mainContent {
     padding: 70px 5%;
+  }
+
+  .splide__arrow {
+    display: none !important;
   }
 }

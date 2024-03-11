@@ -1,0 +1,41 @@
+.containerStars {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.containerStars img {
+    margin: 0 1px;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .containerStars img {
+        width: 12px;
+        height: 12px;
+        margin: 0 0.8px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .containerStars img {
+        width: 14px;
+        height: 14px;
+        margin: 0 0.8px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .containerStars img {
+        width: 12px;
+        height: 12px;
+        margin: 0 0.8px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .containerStars img {
+        width: 11px;
+        height: 11px;
+        margin: 0 0.5px;
+    }
+}
