@@ -2,12 +2,13 @@
 import { useState, useEffect } from "react";
 import styles from "./formContatto.module.css";
 
+
 function FormContatto() {
   const initValues = { nome: "", cognome: "", email: "", message: "" };
   const initState = { values: initValues };
 
   const [state, setState] = useState(initState);
-  const { values, isLoading } = state;
+  const { values } = state;
 
   const handleChange = ({ target }) =>
     setState((prev) => ({
@@ -27,6 +28,24 @@ function FormContatto() {
 
     const onSubmit = async (e) => {
         e.preventDefault()
+
+        console.log("Submitting form...");
+    try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          body: JSON.stringify(values),
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: "application/json",
+          },
+          
+        })
+
+        console.log("Response from server:", res);
+
+      } catch (error) {
+        console.error("Error submitting form:", error);
+      }
     }
 
   return (
@@ -39,10 +58,11 @@ function FormContatto() {
         Compila il modulo qua sotto, ti risponderemo il prima possibile
       </h2>
       <hr />
+      
       <form
         method="POST"
         className={styles.contactForm}
-        type="submit"
+        onSubmit={onSubmit}
       >
         <input
           type="text"
@@ -104,7 +124,7 @@ function FormContatto() {
         />
 
         <button
-            onClick={onSubmit}
+            type="submit"
         >
             INVIA
         </button>
