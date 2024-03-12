@@ -1,44 +1,47 @@
 // GET REQUEST
-import { mailOptions, transporter } from "@/app/config/nodemailer";
 import { NextResponse } from "next/server";
+import nodemailer from 'nodemailer'
 
-export async function GET(req, res) {
-  console.log('PARTITO')
-  if(req.method === "POST") {
-    console.log('è POST')
-    const data = req.body
-    if(!data.nome || !data.cognome || !data.email || !data.message) {
-      return res.status(400).json({message: "CAMPO SBAGLIATO"});
-    }
-    try {
-      await transporter.sendMail({
-        ...mailOptions,
-        subject: 'Subject of the email',
-        text: "prova",
-        html: "<h1>Titolo test</h1><p>Prova testo</p>"
-      })
+export async function POST(req, res) {
+  const SMPT_EMAIL = process.env.EMAIL;
+  const SMPT_PASSWORD = process.env.EMAIL_PASS;
+  const data = await req.json();
 
-      console.log("STA ANDANDO");
-      return NextResponse.json({ message: 'Email sent successfully' }); 
-
-    } catch (error) {
-      console.error("Errore nell'invio dell'email:", error);
-      return res.status(400).json({message: error.message});
-    }
+  if (!data || !data.nome || !data.email || !data.cognome || !data.message) {
+    return res.status(400).send({ message: "Bad request" });
   }
-  
-  console.log('NON POST')
-  return new Response(JSON.stringify({ error: 'Invalid request method' }), {
-    status: 400,
-    headers: { 'Content-Type': 'application/json' },
+
+  const transport = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: SMPT_EMAIL,
+      pass: SMPT_PASSWORD,
+    },
   });
-}
 
+  try {
+    const testResult = await transport.verify();
+    console.log(testResult);
+  } catch (error) {
+    console.log(error);
+  }
 
-//POST REQUEST
-export async function POST(req,res){
-  const data = await req.json()
-  console.log(data)
+  try {
+    const sendResult = await transport.sendMail({
+      from: SMPT_EMAIL,
+      to: SMPT_EMAIL,
+      subject: `NUOVO CONTATTO DA SITO, DA: ${data.nome} ${data.cognome}`,
+      html: `<b>Nome:</b> ${data.nome} <br> <b>Congome:</b> ${data.cognome} <br> <b>Email:</b> ${data.email} <br> <b>Messaggio:</b> ${data.message}`,
+      attachments: [{
+        filename: `${data.img}`,
+        path: __dirname + `/${data.img}`,
+      }]
+    });
 
-  return NextResponse.json(data)
+    console.log(sendResult);
+    return NextResponse.json({ message: 'Email sent successfully' });
+  } catch (error) {
+    console.error("Errore nell'invio dell'email:", error);
+    return res.status(400).json({ message: error.message });
+  }
 }

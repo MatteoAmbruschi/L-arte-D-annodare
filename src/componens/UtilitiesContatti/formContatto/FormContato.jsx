@@ -43,6 +43,10 @@ function FormContatto() {
 
         console.log("Response from server:", res);
 
+        if (res.ok) {
+          setState(initState);
+          setTouched({})
+        }
       } catch (error) {
         console.error("Error submitting form:", error);
       }
@@ -62,7 +66,7 @@ function FormContatto() {
       <form
         method="POST"
         className={styles.contactForm}
-        onSubmit={onSubmit}
+        type='submit'
       >
         <input
           type="text"
@@ -121,10 +125,12 @@ function FormContatto() {
           placeholder="Inserisci Immagini"
           multiple
           className={styles.file}
+
+          onChange={handleChange}
         />
 
         <button
-            type="submit"
+            onClick={onSubmit}
         >
             INVIA
         </button>
