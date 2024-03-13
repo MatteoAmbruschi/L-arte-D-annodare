@@ -17,8 +17,8 @@ function FormContatto() {
       const reader = new FileReader();
   
       reader.onload = () => {
-        const base64Content = reader.result.split(',')[1];
-        resolve(base64Content);
+        const base64Contents = reader.result.split(',')[1];
+        resolve(base64Contents);
       };
   
       reader.onerror = (error) => {
@@ -31,28 +31,20 @@ function FormContatto() {
 
   const handleChange = async ({ target }) => {
     if (target.type === 'file') {
-      const file = target.files[0];
+      const files = target.files;
+      const base64Contents = await Promise.all(Array.from(files).map(base64Encoder));
   
       try {
-        const base64Content = await base64Encoder(file);
-  
         setState((prev) => ({
           ...prev,
           values: {
             ...prev.values,
-            img: file.name
-          },
-        }));
-
-        setState((prev) => ({
-          ...prev,
-          values: {
-            ...prev.values,
-            buffer: base64Content
+            img: Array.from(files).map((file, index) =>  file.name),
+            buffer: Array.from(files).map((file, index) => base64Contents[index])
           },
         }));
   
-        console.log(file);
+        console.log(files);
       } catch (error) {
         console.error('Errore durante la conversione in Base64:', error);
       }
@@ -97,7 +89,7 @@ function FormContatto() {
           setState(initState);
           setTouched({})
           setLoading(false)
-          Navigate
+          /* Navigate */ //DA FARE DOMANI
         }
       } catch (error) {
         console.error("Error submitting form:", error);

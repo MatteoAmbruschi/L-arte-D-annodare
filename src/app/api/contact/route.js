@@ -34,15 +34,16 @@ export async function POST(req, res) {
       html: `<b>Nome:</b> ${data.nome} <br> <b>Congome:</b> ${data.cognome} <br> <b>Email:</b> ${data.email} <br> <b>Messaggio:</b> ${data.message} <br>`,
     };
     if (data.img) {
-      const attachments = {
-        filename: `${data.img}`,
-        content: data.buffer ? `${data.buffer}` : undefined,
+      const attachments = data.img.map((img, index) => ({
+        filename: img,
+        content: data.buffer ? data.buffer[index] : undefined,
         encoding: 'base64',
-      };
+      }));
       
-      console.log(data.img)
-      emailOptions.attachments = [attachments];
+      console.log(data.img);
+      emailOptions.attachments = attachments;
     }
+    
     const sendResult = await transport.sendMail(emailOptions);
     
     console.log(sendResult);
