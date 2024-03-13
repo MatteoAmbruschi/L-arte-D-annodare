@@ -4,20 +4,68 @@ import styles from "./formContatto.module.css";
 
 
 function FormContatto() {
-  const initValues = { nome: "", cognome: "", email: "", message: "" };
+  const initValues = { nome: "", cognome: "", email: "", message: "", img: null, buffer: null };
   const initState = { values: initValues };
 
   const [state, setState] = useState(initState);
+  const [loading, setLoading] = useState(false)
   const { values } = state;
 
-  const handleChange = ({ target }) =>
-    setState((prev) => ({
-      ...prev,
-      values: {
-        ...prev.values,
-        [target.name]: target.value,
-      },
-    }));
+  
+  function base64Encoder(blob) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+  
+      reader.onload = () => {
+        const base64Content = reader.result.split(',')[1];
+        resolve(base64Content);
+      };
+  
+      reader.onerror = (error) => {
+        reject(error);
+      };
+  
+      reader.readAsDataURL(blob);
+    });
+  }
+
+  const handleChange = async ({ target }) => {
+    if (target.type === 'file') {
+      const file = target.files[0];
+  
+      try {
+        const base64Content = await base64Encoder(file);
+  
+        setState((prev) => ({
+          ...prev,
+          values: {
+            ...prev.values,
+            img: file.name
+          },
+        }));
+
+        setState((prev) => ({
+          ...prev,
+          values: {
+            ...prev.values,
+            buffer: base64Content
+          },
+        }));
+  
+        console.log(file);
+      } catch (error) {
+        console.error('Errore durante la conversione in Base64:', error);
+      }
+    } else {
+      setState((prev) => ({
+        ...prev,
+        values: {
+          ...prev.values,
+          [target.name]: target.value,
+        },
+      }));
+    }
+  };
 
 
     const [touched, setTouched] = useState({})
@@ -30,7 +78,10 @@ function FormContatto() {
         e.preventDefault()
 
         console.log("Submitting form...");
+        console.log(values);
     try {
+
+      setLoading(true)
         const res = await fetch('/api/contact', {
           method: 'POST',
           body: JSON.stringify(values),
@@ -38,7 +89,6 @@ function FormContatto() {
             'Content-Type': 'application/json',
             Accept: "application/json",
           },
-          
         })
 
         console.log("Response from server:", res);
@@ -46,6 +96,8 @@ function FormContatto() {
         if (res.ok) {
           setState(initState);
           setTouched({})
+          setLoading(false)
+          Navigate
         }
       } catch (error) {
         console.error("Error submitting form:", error);
@@ -67,6 +119,7 @@ function FormContatto() {
         method="POST"
         className={styles.contactForm}
         type='submit'
+        encType="multipart/form-data"
       >
         <input
           type="text"
@@ -121,7 +174,7 @@ function FormContatto() {
           type="file"
           name="img"
           id="img"
-          accept="image/png, image/jpeg"
+          accept="image/*"
           placeholder="Inserisci Immagini"
           multiple
           className={styles.file}
@@ -131,6 +184,8 @@ function FormContatto() {
 
         <button
             onClick={onSubmit}
+            disabled={!values.nome || !values.email || !values.cognome || !values.message}
+            className={!values.nome || !values.email || !values.cognome || !values.message || loading ? styles.buttonInactive : ''}
         >
             INVIA
         </button>

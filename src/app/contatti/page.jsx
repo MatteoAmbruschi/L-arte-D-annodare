@@ -1,5 +1,5 @@
 import CtaMaps from "@/componens/UtilitiesContatti/ctaMaps/CtaMaps"
-import FormContatto from "@/componens/UtilitiesContatti/formContatto/FormContato"
+import FormContatto from "@/componens/UtilitiesContatti/formContatto/FormContatto"
 import OrariContatti from "@/componens/UtilitiesContatti/orariContatto/OrariContatti"
 import Header from "@/componens/header/Header"
 
