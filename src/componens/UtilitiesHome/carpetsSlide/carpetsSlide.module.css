@@ -13,9 +13,6 @@
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-/* .sectionCarpets:hover {
-    height: 45vh;
-} */
 
 .img {
     transition: all 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -35,7 +32,7 @@
     object-fit: cover;
 }
 
-.img::before {
+.img::after {
     transition: all 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
     content: '';
     position: absolute;
@@ -47,7 +44,7 @@
     opacity: 0.55;
 }
 
-.img:hover::before {
+.img:hover::after {
     opacity: 0.2;
 }
 

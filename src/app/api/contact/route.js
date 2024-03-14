@@ -8,7 +8,7 @@ export async function POST(req, res) {
   const data = await req.json();
 
   if (!data || !data.nome || !data.email || !data.cognome || !data.message) {
-    return NextResponse.send({ message: "Bad request" });
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
   }
 
   const transport = nodemailer.createTransport({
@@ -50,6 +50,6 @@ export async function POST(req, res) {
     return NextResponse.json({ message: 'Email sent successfully' });
   } catch (error) {
     console.error("Errore nell'invio dell'email:", error);
-    return NextResponse.json({ message: error.message });
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
   }
 }

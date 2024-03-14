@@ -10,6 +10,8 @@ function FormContatto() {
   const [state, setState] = useState(initState);
   const [loading, setLoading] = useState(false)
   const { values } = state;
+  const [arrived, setArrived] = useState(false)
+  const [error, setError] = useState(false)
 
   
   function base64Encoder(blob) {
@@ -44,7 +46,6 @@ function FormContatto() {
           },
         }));
   
-        console.log(files);
       } catch (error) {
         console.error('Errore durante la conversione in Base64:', error);
       }
@@ -70,10 +71,12 @@ function FormContatto() {
         e.preventDefault()
 
         console.log("Submitting form...");
-        console.log(values);
     try {
 
       setLoading(true)
+      setArrived(false)
+      setError(false)
+
         const res = await fetch('/api/contact', {
           method: 'POST',
           body: JSON.stringify(values),
@@ -83,16 +86,22 @@ function FormContatto() {
           },
         })
 
-        console.log("Response from server:", res);
+        console.log("Response from server:", res.status);
 
-        if (res.ok) {
+        if (res.status === 200) {
           setState(initState);
           setTouched({})
           setLoading(false)
-          /* Navigate */ //DA FARE DOMANI
+          setArrived(true)
+        }
+        else {
+          setLoading(false)
+          setError(true)
         }
       } catch (error) {
         console.error("Error submitting form:", error);
+        setLoading(false)
+        setError(true)
       }
     }
 
@@ -174,13 +183,38 @@ function FormContatto() {
           onChange={handleChange}
         />
 
-        <button
+    {!loading ? 
+         (<button
             onClick={onSubmit}
             disabled={!values.nome || !values.email || !values.cognome || !values.message}
-            className={!values.nome || !values.email || !values.cognome || !values.message || loading ? styles.buttonInactive : ''}
-        >
-            INVIA
-        </button>
+            className={`${!values.nome || !values.email || !values.cognome || !values.message ? styles.buttonInactive : ''}`}
+            >
+              INVIA
+         </button>)
+        :
+        (<button
+          onClick={onSubmit}
+          disabled={loading}
+          className={`${loading ? styles.buttonLoading  : ''}`}
+          >
+            CARICAMENTO...
+       </button>)
+    }
+        
+            <div className={`${arrived ? styles.emailArrived : styles.noHeight}`}>
+                <h6>INVIO RIUSCITO</h6>
+                <p>Grazie per averci contattato, ti risponderemo il prima possibile </p>
+                <div className={styles.toggleClose} onClick={() => setArrived(false)} />
+            </div>
+
+
+            <div className={`${error ? styles.emailFailed : styles.noHeight}`}>
+              <h6>ERRORE</h6>
+              <p>Verifica i campi e che il totale degli allegati non superi i 25 MB</p>
+              <div className={styles.toggleClose} onClick={() => setError(false)} />
+            </div>
+
+
       </form>
     </section>
   );
