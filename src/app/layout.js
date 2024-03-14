@@ -2,7 +2,7 @@ import "./globals.css";
 
 import Menu from "@/componens/menu/Menu";
 import Footer from "@/componens/footer/Footer"
-import { GoogleAnalytics } from '@next/third-parties/google'
+/* import { GoogleAnalytics } from '@next/third-parties/google' */
 
 
 export const metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
             {children}
           <Footer />
         </body>
-        <GoogleAnalytics gaId="G-C266BZ096V" />
+        {/* <GoogleAnalytics gaId="G-C266BZ096V" /> */}
     </html>
   );
 }
