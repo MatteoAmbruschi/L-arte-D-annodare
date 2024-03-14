@@ -66,6 +66,7 @@ function CardsReviews() {
         type         : 'loop',
         autoplay     : true,
         pauseOnHover : true,
+        pauseOnFocus: false,
         resetProgress: false,
         rewind: true,
         interval: 4000,
