@@ -3,7 +3,7 @@ import "./globals.css";
 import Menu from "@/componens/menu/Menu";
 import Footer from "@/componens/footer/Footer"
 import { Analytics } from "@vercel/analytics/react"
-/* import { GoogleAnalytics } from '@next/third-parties/google' */
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 export const metadata = {
@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
             {children}
           <Footer />
           <Analytics />
+          <SpeedInsights />
         </body>
-        {/* <GoogleAnalytics gaId="G-C266BZ096V" /> */}
     </html>
   );
 }
