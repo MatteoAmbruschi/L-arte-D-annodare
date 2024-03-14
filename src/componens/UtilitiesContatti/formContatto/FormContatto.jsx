@@ -67,10 +67,21 @@ function FormContatto() {
     }))
 
 
+    const isValidEmail = (email) => {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    };
+
+    
     const onSubmit = async (e) => {
         e.preventDefault()
 
         console.log("Submitting form...");
+        
+    if (!isValidEmail(values.email)) {
+    return setError(true)
+  }
+
     try {
 
       setLoading(true)

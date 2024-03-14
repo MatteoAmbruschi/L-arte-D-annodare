@@ -42,7 +42,8 @@
     font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
     border-left: 5px solid #866e54;
     cursor: pointer;
-    transition: all 0.45s cubic-bezier(0.77,0.2,0.05,1.0); 
+    transition: all 0.45s cubic-bezier(0.77,0.2,0.05,1.0);
+    letter-spacing: 2px;
     width: 100%;
 }
 .contactForm button:hover {
@@ -101,7 +102,7 @@
     width: 100%;
     height: 200px;
     background-color: var(--gold);
-    border-radius: 10px;
+    border-radius: 8px;
     margin-top: 20px;
     display: flex;
     align-items: center;
