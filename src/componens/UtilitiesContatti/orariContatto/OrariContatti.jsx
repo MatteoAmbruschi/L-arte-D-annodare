@@ -1,7 +1,7 @@
 import styles from './orariContatti.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import OrariClient from './orariClient/orariClient';
+import OrariClient from './orariClient/OrariClient';
 
 function OrariContatti() {
 
