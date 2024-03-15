@@ -1,28 +1,28 @@
-/* @font-face {
+@font-face {
   font-family: 'Times New Roman';
-  src: url(./TimesNewRoman/times-new-roman.ttf) format('truetype');
+  src: url(./TimesNewRoman/times-new-roman.woff2) format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Times New Roman';
-  src: url(./TimesNewRoman/times-new-roman-italic.ttf) format('truetype');
+  src: url(./TimesNewRoman/times-new-roman-italic.woff2) format('woff2');
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Times New Roman';
-  src: url(./TimesNewRoman/times-new-roman-bold.ttf) format('truetype');
+  src: url(./TimesNewRoman/times-new-roman-bold.woff2) format('woff2');
   font-weight: bold;
   font-display: swap;
 }
 @font-face {
   font-family: 'Times New Roman';
-  src: url(./TimesNewRoman/times-new-roman-bold-italic.ttf) format('truetype');
+  src: url(./TimesNewRoman/times-new-roman-bold-italic.woff2) format('woff2');
   font-style: italic;
   font-weight: bold;
   font-display: swap;
 }
- */
+
 
 :root{
   --light: #EFEFEF;
