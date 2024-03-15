@@ -15,7 +15,6 @@ const Menu = () => {
 
     useEffect(() => {
         let lastScrollTop = 0;
-       /*  if(window.innerWidth > window.innerHeight){ */
             window.addEventListener("scroll", function(){ 
             let st = window.scrollY || document.documentElement.scrollTop;
 
@@ -26,7 +25,6 @@ const Menu = () => {
             }
             lastScrollTop = st <= 0 ? 0 : st;
             }, true);
-      /*    }  */
     }, []);
 
     const pathname = usePathname();
@@ -36,7 +34,7 @@ const Menu = () => {
             <div className={styles.navContainer}>
             
             <Link href="/" className={styles.logoMenu} onClick={() => setToggle(false)}>
-                <Image src='/logo.png' width={240.48} height={34.00} alt="logo l'arte d'annodare" />
+                <Image src='/logo.webp' width={240.48} height={34.00} alt="logo l'arte d'annodare" />
             </Link>
 
                     <ul className={styles.navMenu}>
