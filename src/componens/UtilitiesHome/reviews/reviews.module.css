@@ -55,16 +55,16 @@
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     .containerReviews h2 {
-        font-size: 52px;
-        line-height: 52px;
+        font-size: 48px;
+        line-height: 48px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .containerReviews h2 {
-        font-size: 48px;
-        letter-spacing: 0.4px;
-        line-height: 48px;
+        font-size: 45px;
+        letter-spacing: 0.3px;
+        line-height: 45px;
       }  
 }
 
@@ -81,8 +81,8 @@
         background-attachment:scroll;
     }
     .containerReviews h2 {
-        font-size: 11.5vw;
+        font-size: 10.5vw;
         letter-spacing: 0.2px;
-        line-height: 11.5vw;
+        line-height: 10.5vw;
       }  
 }

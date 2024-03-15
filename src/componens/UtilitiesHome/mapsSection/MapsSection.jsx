@@ -22,10 +22,10 @@ console.log(GOOGLE_MAPS)
   
         <div className={styles.containerPercorso}>
   
-          <h3>IL NOSTRO PERCORSO</h3>
+          <h3>LA NOSTRA STORIA</h3>
           <hr />
-          <p>Dopo una lunga esperienza maturata da parte mia in un prestigioso negozio in <strong>Bergamo</strong> e da parte del mio collega <strong>da generazioni di restauratori  in Turchia,</strong> decidiamo di affrontare il grande passo ed <strong>aprire nel 2006</strong> la nostra attività con il preciso focus di garantire al meglio la conservazione del tappeto (<strong>Restauro, Riparazione, Lavaggio ecc..</strong>). 
-              Convinti da sempre che il lavoro nobiliti l&apos;uomo de svolto con passione ed onestà, la nostra maggiore gratificazione è quella di <strong>soddisfare pienamente il cliente</strong> cercando anche di chiarire e “svelarne” questo meraviglioso mondo.</p>
+          <p>Dopo una lunga esperienza maturata da parte mia in un prestigioso negozio a <strong>Bergamo</strong> e da parte del mio collega <strong>con generazioni di restauratori in Turchia,</strong> decidiamo di affrontare il grande passo e <strong>aprire nel 2006</strong> la nostra attività con il preciso focus di garantire al meglio la conservazione del tappeto (<strong>Restauro, Riparazione, Lavaggio ecc..</strong>).
+           Con la fortuna di essere riusciti a trasformare la nostra passione in lavoro, la nostra maggiore gratificazione è quella di <strong>soddisfare pienamente il cliente,</strong> cercando anche di chiarire e “svelare” questo meraviglioso mondo.</p>
         </div>
     </div>
     )

@@ -135,8 +135,8 @@
 
 @media screen and (max-width: 480px)  {
     .prospectiveText p{
-        font-size: 11.5vw;
-        line-height: 10.5vw;
+        font-size: 11vw;
+        line-height: 10.2vw;
     }
 
     .containerImgCta{

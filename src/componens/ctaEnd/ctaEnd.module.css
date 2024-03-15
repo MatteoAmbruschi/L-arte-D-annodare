@@ -36,24 +36,24 @@
 }
 
 .ctaTitle{
-    font-size: 65px;
+    font-size: 62px;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     .ctaTitle{
-        font-size: 60px;
+        font-size: 58px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .ctaTitle{
-        font-size: 55px;
+        font-size: 52px;
     }
 }
 
 @media (min-width: 481px) and (max-width: 767px){
     .ctaTitle{
-        font-size: 45px;
+        font-size: 42px;
     }
     .containerElement hr{
         margin: 30px 0;
@@ -62,8 +62,8 @@
 
 @media screen and (max-width: 480px){
     .ctaTitle{
-        font-size: 12vw;
-        line-height: 12vw;
+        font-size: 11.6vw;
+        line-height: 11.6vw;
     }
     .backgroundOverlay{
         background-attachment:scroll;

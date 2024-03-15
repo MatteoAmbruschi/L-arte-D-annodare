@@ -91,12 +91,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    
-    .containerText h2 {
-        font-size: 50px;
-        letter-spacing: 0.4px;
-        line-height: 50px;
-    }
 
     .hr {
         width: 170px;

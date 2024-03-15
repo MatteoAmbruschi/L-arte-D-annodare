@@ -1,3 +1,29 @@
+/* @font-face {
+  font-family: 'Times New Roman';
+  src: url(./TimesNewRoman/times-new-roman.ttf) format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times New Roman';
+  src: url(./TimesNewRoman/times-new-roman-italic.ttf) format('truetype');
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times New Roman';
+  src: url(./TimesNewRoman/times-new-roman-bold.ttf) format('truetype');
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times New Roman';
+  src: url(./TimesNewRoman/times-new-roman-bold-italic.ttf) format('truetype');
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+}
+ */
+
 :root{
   --light: #EFEFEF;
   --dark: #1C1C1C;
@@ -16,7 +42,7 @@ body {
   scroll-behavior: smooth;
   background: var(--dark);
   color: var(--light);
-  font-family: 'Times New Roman', Times, serif, 'Segoe UI', Geneva, Verdana, sans-serif;
+  font-family: 'Times New Roman', Times, serif, Georgia, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -25,8 +51,8 @@ a {
 }
 
 h1 {
-  font-size: 130px;
-  letter-spacing: 9px;
+  font-size: 125px;
+  letter-spacing: 4px;
   line-height: 100px;
   text-align: center;
   font-weight: 300;
@@ -35,9 +61,9 @@ h1 {
 }
 
 h2, h6 {
-  font-size: 60px;
-  letter-spacing: 0.5px;
-  line-height: 60px;
+  font-size: 56px;
+  letter-spacing: 0.3px;
+  line-height: 56px;
   text-align: center;
   font-weight: 500;
 }
@@ -136,15 +162,15 @@ p a:hover {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   h1 {
-    font-size: 100px;
-    letter-spacing: 9px;
-    line-height: 70px;
+    font-size: 98px;
+    letter-spacing: 4px;
+    line-height: 72px;
     padding-bottom: 17px;
   }
 
   h2, h6  {
-    font-size: 58px;
-    line-height: 58px;
+    font-size: 52px;
+    line-height: 52px;
   }
 
   h3 {
@@ -183,16 +209,16 @@ p a:hover {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   h1 {
-    font-size: 83px;
-    letter-spacing: 7px;
+    font-size: 80px;
+    letter-spacing: 3px;
     line-height: 60px;
     padding-bottom: 15px;
   }
   
   h2, h6  {
-    font-size: 54px;
-    letter-spacing: 0.5px;
-    line-height: 54px;
+    font-size: 48px;
+    letter-spacing: 0.2px;
+    line-height: 48px;
   }  
 
   h3 {
@@ -236,15 +262,15 @@ p a:hover {
 
 @media (min-width: 481px) and (max-width: 767px){
   h1 {
-    font-size: 55px;
-    letter-spacing: 5px;
-    line-height: 39px;
+    font-size: 54px;
+    letter-spacing: 2px;
+    line-height: 42px;
     padding-bottom: 15px;
   }
 
   h2, h6  {
-    font-size: 52px;
-    line-height: 52px;
+    font-size: 47px;
+    line-height: 47px;
   }  
 
   h3 {
@@ -287,16 +313,16 @@ p a:hover {
 
 @media screen and (max-width: 480px){
   h1 {
-    font-size: 12.8vw;
-    letter-spacing: 3px;
-    line-height: 9.5vw;
+    font-size: 11.9vw;
+    letter-spacing: 1px;
+    line-height: 9vw;
     padding-bottom: 15px;
   }
 
   h2, h6  {
-    font-size: 42px;
-    letter-spacing: 0.2px;
-    line-height: 42px;
+    font-size: 38px;
+    letter-spacing: 0.1px;
+    line-height: 38px;
   }  
 
   h3 {

@@ -1,5 +1,4 @@
 import styles from './header.module.css'
-import Image from 'next/image'
 import Button from '../button/Button'
 
 function Header({imgHead, title, subTitle, text, button = false}) {
