@@ -8,7 +8,7 @@ import Numbers from '@/componens/UtilitiesHome/numbers/Numbers';
 import Servizi from '@/componens/UtilitiesHome/servizi/Servizi';
 
 export const metadata = {
-  title: "L'arte D'annodare | Tappeti orientali bergamo, lavaggio e restauro a Seriate (Bergamo)",
+  title: "L'arte D'annodare | Tappeti orientali a Bergamo, lavaggio e restauro a Seriate (Bergamo)",
   description: "Punto di riferimento a Bergamo e provincia per chi ama il tappeto orientale. Offriamo vendita, restauro e lavaggio tappeti. Servizio di consulenza e preventivi gratuiti.",
 };
 

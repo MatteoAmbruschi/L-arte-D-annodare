@@ -5,6 +5,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Button from "@/componens/button/Button"
 
+
+export const metadata = {
+    title: "Guida ai Tappeti Persiani: Storia, Tessitura e Valore | Negozio di Tappeti a Bergamo",
+    description: "Scopri l'incanto dei tappeti persiani con la nostra guida completa. Esplora la storia millenaria, la bellezza artigianale e i fattori che determinano il loro valore. Visita il nostro negozio a Bergamo e trova il tappeto perfetto per te!",
+  };
+
 function TappetiPersiani() {
     const textHead = <>Scopri l&apos;Incanto dei Tappeti Persiani: Una Guida dalla Tessitura Antica ai Moderni Tesori. Esplora la Storia, la Bellezza e i Fattori che Determinano il Loro Valore. Un Affascinante Viaggio nel Mondo degli Affascinanti Tappeti Iraniani.</>
 

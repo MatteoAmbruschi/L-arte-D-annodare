@@ -5,6 +5,11 @@ import Link from 'next/link'
 import Button from "@/componens/button/Button"
 import CtaEnd from "@/componens/ctaEnd/CtaEnd"
 
+export const metadata = {
+    title: "Guida ai Tappeti Kilim: Storia, Tecnica, Prezzi e Cura | Negozio di Tappeti",
+    description: "Scopri tutto quello che c'è da sapere sui tappeti kilim: dalla loro storia millenaria alla modernità dei disegni, trova prezzi e consigli per la cura. Esplora il mondo dei kilim nel nostro negozio di tappeti a Bergamo. Contattaci per saperne di più!",
+  };
+
 function Tappetikilim() {
     const textHead = <>Esplora il Mondo dei Tappeti Kilim: Tradizione Artigianale del Medio Oriente e dell&apos;Asia Centrale. Dalle Origini Antiche alla Modernità, Scopri i Segreti di Questi Tappeti Tessuti a Mano. Dal Design Tradizionale ai Kilim Moderni, Trova l&apos;Eleganza e la Durabilità in Ogni Filo. Guida ai Prezzi e Consigli per la Cura.</>
 
