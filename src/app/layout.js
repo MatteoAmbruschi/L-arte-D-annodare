@@ -11,11 +11,12 @@ export const metadata = {
     template: "%s | L'arte D'annodare"
   },
   description: "Punto di riferimento a Bergamo e provincia per chi ama il tappeto orientale. Offriamo vendita, restauro e lavaggio tappeti. Servizio di consulenza e preventivi gratuiti.",
+  metadataBase: "https://lartedannodare.it",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="it">
+    <html lang="it-IT">
       <body>
         <Menu />
             {children}

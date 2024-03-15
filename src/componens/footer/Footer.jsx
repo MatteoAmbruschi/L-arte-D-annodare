@@ -31,8 +31,8 @@ function Footer (){
             </div>
 
             <div className={styles.contact}>
-                <p>ambru63@katamail.com</p>
-                <Link target='blank' href="mailto:ambru63@katamail.com"><Image src='/email.svg' width='40' height='40' alt='icon email' /></Link>
+                <p>lartedannodare.tappeti@gmail.com</p>
+                <Link target='blank' href="mailto:lartedannodare.tappeti@gmail.com"><Image src='/email.svg' width='40' height='40' alt='icon email' /></Link>
             </div>
         </div>
     )
