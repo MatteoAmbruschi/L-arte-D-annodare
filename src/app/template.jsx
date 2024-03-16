@@ -1,6 +1,5 @@
 'use client'
 import { LazyMotion, domAnimation, m } from "framer-motion";
-
 export default function Template({ children }) {
 
     return (
