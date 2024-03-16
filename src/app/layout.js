@@ -11,7 +11,7 @@ export const metadata = {
     template: "%s | L'arte D'annodare"
   },
   description: "Punto di riferimento a Bergamo e provincia per chi ama il tappeto orientale. Offriamo vendita, restauro e lavaggio tappeti. Servizio di consulenza e preventivi gratuiti.",
-  metadataBase: "https://lartedannodare.it",
+  metadataBase: new URL("https://lartedannodare.it"),
 };
 
 export default function RootLayout({ children }) {

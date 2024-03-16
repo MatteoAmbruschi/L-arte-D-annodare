@@ -362,3 +362,9 @@ p a:hover {
     display: none !important;
   }
 }
+
+
+::-webkit-scrollbar{width: 13px;}  
+             ::-webkit-scrollbar-track{background-color: var(--light);}      
+              ::-webkit-scrollbar-thumb{background-color: var(--dark);}
+                ::-webkit-scrollbar-thumb:hover{border: 1px solid var(--red);}
