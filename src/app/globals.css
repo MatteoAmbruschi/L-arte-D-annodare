@@ -39,7 +39,7 @@
 
 html,
 body {
-  scroll-behavior: smooth;
+ /*  scroll-behavior: smooth; */
   background: var(--dark);
   color: var(--light);
   font-family: 'Times New Roman', Times, serif, Georgia, Geneva, Verdana, sans-serif;

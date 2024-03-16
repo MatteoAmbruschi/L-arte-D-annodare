@@ -5,6 +5,8 @@ import styles from './footer.module.css'
 function Footer (){
 
     return (
+        
+    <>
         <div className={`mainContent ${styles.footer}`}>
             <meta
                 name="format-detection"
@@ -35,6 +37,13 @@ function Footer (){
                 <Link target='blank' href="mailto:lartedannodare.tappeti@gmail.com"><Image src='/email.svg' width='40' height='40' alt='icon email' /></Link>
             </div>
         </div>
+
+        
+            <div className={styles.copyright}>
+               <p>Copyrihgt© 2024 L&apos;arte D&apos;annodare</p>
+                <p><i>Site by Matteo Ambruschi</i></p>
+            </div>
+     </>
     )
 }
 

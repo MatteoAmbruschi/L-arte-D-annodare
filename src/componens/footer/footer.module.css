@@ -38,6 +38,16 @@
     padding: 0 15px;
 }
 
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 0 5% 50px 5%;
+}
+
+.copyright p {
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+}
+
 @media (min-width: 1025px) and (max-width: 1280px) { 
     .footer p {
         font-size: 16px;

@@ -4,6 +4,7 @@ import Menu from "@/componens/menu/Menu";
 import Footer from "@/componens/footer/Footer"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import Lenis from "../componens/lenis";
 
 export const metadata = {
   title: {
@@ -19,10 +20,12 @@ export default function RootLayout({ children }) {
     <html lang="it-IT">
       <body>
         <Menu />
-            {children}
+            <Lenis>
+              {children}
+            </Lenis>  
           <Footer />
-          <Analytics />
-          <SpeedInsights />
+              <Analytics />
+              <SpeedInsights />
         </body>
     </html>
   );
