@@ -15,7 +15,7 @@ console.log(GOOGLE_MAPS)
               mode="place"
               language='it'
               zoom='12'
-              q="L&#39;Arte%20D&#39;Annodare"
+              q="L&#39;Arte%20D&#39;Annodare, Bergamo"
               title="Via: Corso Roma, 26 24068 - Seriate (BG)" aria-label="Via: Corso Roma, 26 24068 - Seriate (BG)"
             />
           </div>
