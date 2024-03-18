@@ -1,14 +1,8 @@
 'use client'
 import { LazyMotion, domAnimation, m } from "framer-motion";
-import { ReactLenis } from '@studio-freight/react-lenis';
-import { useState, useEffect } from 'react'
+
 
 export default function Template({ children }) {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        setIsMobile(window.innerWidth <= 768);
-    }, []);
 
     return (
         <LazyMotion features={domAnimation}>
@@ -18,13 +12,9 @@ export default function Template({ children }) {
                 transition={{ ease: 'easeInOut', duration: 0.45 }}
             >
 
-            {isMobile ? (
-                    children
-                ) : (
-                    <ReactLenis root>
-                        {children}
-                    </ReactLenis>
-            )}
+   
+                    {children}
+  
             
             </m.div>
         </LazyMotion>
