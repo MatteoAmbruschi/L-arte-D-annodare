@@ -5,13 +5,10 @@
 .backgroundOverlay{
     background-attachment: fixed;
     filter: brightness(25%) contrast(100%) saturate(100%) blur(0) hue-rotate(0deg);
-    background-image: url('/negozio-tappeti-bergamo.webp');
     background-position: top center;
     background-repeat: no-repeat;  
     background-size: cover;
     mix-blend-mode: screen;
-    height: 100%;
-    width: 100%;
     position: absolute;
 }
 

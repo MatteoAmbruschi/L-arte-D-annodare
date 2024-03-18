@@ -6,14 +6,11 @@
 .backgroundOverlay{
     background-attachment: fixed;
     filter: brightness(86%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
-    background-image: url('/lavaggio-tappeto.webp');
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.40;
     mix-blend-mode: screen;
-    height: 100%;
-    width: 100%;
     position: absolute;
 }
 

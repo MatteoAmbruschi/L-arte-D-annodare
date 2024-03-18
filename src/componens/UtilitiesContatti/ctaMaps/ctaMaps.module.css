@@ -7,13 +7,10 @@
 .imgOverlay{
     background-attachment: fixed;
     filter: brightness(25%) contrast(100%) saturate(100%) blur(0) hue-rotate(0deg);
-    background-image: url('/tappeto-salotto.webp');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     mix-blend-mode: screen;
-    height: 100%;
-    width: 100%;
     top: 0;
     left: 0;
     position: absolute;

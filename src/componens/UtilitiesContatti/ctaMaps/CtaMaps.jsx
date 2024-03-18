@@ -1,12 +1,20 @@
 import Button from '@/componens/button/Button'
 import styles from './ctaMaps.module.css'
 import { GoogleMapsEmbed } from '@next/third-parties/google'
+import { getImageProps } from 'next/image'
+import getBackgroundImage from '@/componens/getBackgroundImage'
 const GOOGLE_MAPS = process.env.GOOGLE_MAPS;
 
 function CtaMaps() {
+    const {
+        props: { srcSet },
+      } = getImageProps({ alt: "tappeto da salotto e comodino", width: 1080, height: 720, src: '/tappeto-salotto.webp' })
+      const backgroundImage = getBackgroundImage(srcSet)
+      const style = { height: '100%', width: '100%', backgroundImage }
+
     return (
         <section className={styles.containerCtaM}>
-            <div className={styles.imgOverlay} />
+            <div className={styles.imgOverlay} style={style} />
             <div className={styles.shapeTop}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
                     <path className="fill" d="M0,6V0h1000v100L0,6z"></path>
