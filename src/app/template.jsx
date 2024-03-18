@@ -1,6 +1,6 @@
 'use client'
 import { LazyMotion, domAnimation, m } from "framer-motion";
-
+import { ReactLenis } from '@studio-freight/react-lenis';
 
 export default function Template({ children }) {
 
@@ -12,9 +12,13 @@ export default function Template({ children }) {
                 transition={{ ease: 'easeInOut', duration: 0.45 }}
             >
 
-   
-                    {children}
-  
+            {window.innerWidth <= 768 ? (
+                    children
+                ) : (
+                    <ReactLenis root>
+                        {children}
+                    </ReactLenis>
+            )}
             
             </m.div>
         </LazyMotion>
