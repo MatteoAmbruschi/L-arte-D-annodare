@@ -8,7 +8,9 @@ export default function Template({ children }) {
 
     useEffect(() => {
         setIsMobile(window.innerWidth <= 768);
+        window.scrollTo(0,0)
     }, []);
+
     return (
         <LazyMotion features={domAnimation}>
             <m.div
