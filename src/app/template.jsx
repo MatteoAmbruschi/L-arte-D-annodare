@@ -1,5 +1,5 @@
 'use client'
-import { LazyMotion, domAnimation, m } from "framer-motion";
+import { motion } from "framer-motion"
 import { ReactLenis } from '@studio-freight/react-lenis';
 import { useState, useEffect } from 'react'
 
@@ -11,8 +11,7 @@ export default function Template({ children }) {
     }, []);
 
     return (
-        <LazyMotion features={domAnimation}>
-            <m.div
+            <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ ease: 'easeInOut', duration: 0.45 }}
@@ -26,7 +25,6 @@ export default function Template({ children }) {
                     </ReactLenis>
             )}
             
-            </m.div>
-        </LazyMotion>
+            </motion.div>
     );
 }
