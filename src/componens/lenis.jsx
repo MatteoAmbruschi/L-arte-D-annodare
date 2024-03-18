@@ -1,4 +1,4 @@
-'use client'
+/* 'use client'
 import { ReactLenis } from '@studio-freight/react-lenis';
 import { useState, useEffect } from 'react'
 
@@ -20,4 +20,4 @@ export default function Lenis({children}) {
             )}
         </>
     )
-}
+} */
