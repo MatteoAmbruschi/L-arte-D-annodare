@@ -20,7 +20,9 @@ export default function RootLayout({ children }) {
     <html lang="it-IT">
       <body>
         <Menu />
+            <Lenis>
               {children}
+            </Lenis>  
           <Footer />
               <Analytics />
               <SpeedInsights />
