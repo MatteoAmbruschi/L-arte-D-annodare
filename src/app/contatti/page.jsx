@@ -2,6 +2,7 @@ import CtaMaps from "@/componens/UtilitiesContatti/ctaMaps/CtaMaps"
 import FormContatto from "@/componens/UtilitiesContatti/formContatto/FormContatto"
 import OrariContatti from "@/componens/UtilitiesContatti/orariContatto/OrariContatti"
 import Header from "@/componens/header/Header"
+import CookieBanner from "@/componens/cookieBanner/CookieBanner"
 
 
 export const metadata = {
@@ -21,6 +22,7 @@ function Contatti() {
             <FormContatto />
 
             <CtaMaps />
+            <CookieBanner /> 
         </div>
     )
 }
