@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './footer.module.css'
+import dynamic from 'next/dynamic';
 const CookieBanner = dynamic(() => import('@/componens/cookieBanner/CookieBanner'), { loading: () => <div>Caricamento...</div> });
 
 function Footer (){
