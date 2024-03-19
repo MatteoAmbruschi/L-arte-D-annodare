@@ -7,7 +7,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import Lenis from "../componens/lenis";
 import dynamic from 'next/dynamic';
 
-const CookieBanner = dynamic(() => import('./CookieBanner'), { loading: () => <div>Caricamento...</div> });
+const CookieBanner = dynamic(() => import('@/componens/cookieBanner/CookieBanner'), { loading: () => <div>Caricamento...</div> });
 
 export const metadata = {
   title: {
