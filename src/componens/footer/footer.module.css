@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    word-break: break-word;
 }
 
 .footer a{ 

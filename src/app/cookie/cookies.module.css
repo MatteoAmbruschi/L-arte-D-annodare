@@ -1,0 +1,26 @@
+.titleCookie {
+    margin-top: 20px;
+}
+
+.containerCookies{
+    padding-top: 50px;
+}
+
+.containerCookies h4{
+    text-align: left;
+    text-align-last: left;
+    padding: 28px 0 10px 0;
+    font-size: 24px;
+}
+
+.containerCookies p {
+    text-align: justify;
+    text-align-last: left;
+}
+
+.containerCookies ul {
+    padding: 0 15px;
+}
+.containerCookies li {
+margin: 15px 0
+}

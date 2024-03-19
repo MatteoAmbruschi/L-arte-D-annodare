@@ -2,7 +2,7 @@ import Button from '@/componens/button/Button'
 import InfoShop from '../infoShop/InfoShop'
 import styles from './infoBackground.module.css'
 import { getImageProps } from 'next/image'
-import getBackgroundImage from '../../getBackgroundImage'
+import getBackgroundImage from '../../GetBackgroundImage'
 
 function InfoBackground() {
     const textRestauro= <>All&apos;interno del laboratorio <strong>disponiamo di oltre 200 kg di lana orientale tinte anche con colori vegetali.</strong> Quando ci viene fatto visionare un tappeto cerchiamo di consigliare il lavoro più appropriato considerandone il valore, la condizione, la tipologia ecc, <strong>senza mai dimenticarci</strong> che qualsiasi tappeto, anche il più umile, <strong>può rivestire una grande importanza per chi lo possiede.</strong> I preventivi sono immediati, chiari e <strong>senza rischio di sgradite “sorprese” finali.</strong></>
