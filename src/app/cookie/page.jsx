@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styles from './cookies.module.css'
+import CookieBanner from '@/componens/cookieBanner/CookieBanner'
 
 function Cookie (){
 
@@ -21,7 +22,8 @@ function Cookie (){
             <p>Puoi accettare o rifiutare l&apos;uso dei cookie attraverso le impostazioni del tuo browser. Puoi anche impostare le tue preferenze sui cookie tramite il banner apposito che compare durante la tua visita al nostro sito. Tuttavia, la disabilitazione dei cookie potrebbe influenzare la tua esperienza di navigazione e alcune funzionalità del sito potrebbero non essere disponibili.</p>
 
             <p>Per maggiori informazioni sui cookie e sulle pratiche di privacy, consulta la nostra <Link href="Informativa-privacy-ai-sensi-degli-artt.pdf" target='_blank'>Informativa sulla Privacy</Link>.</p>
-        </div>         
+        </div>  
+        <CookieBanner />       
     </div>
     )
 }
