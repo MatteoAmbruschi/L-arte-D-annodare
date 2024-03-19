@@ -5,6 +5,9 @@ import Footer from "@/componens/footer/Footer"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Lenis from "../componens/lenis";
+import dynamic from 'next/dynamic';
+
+const CookieBanner = dynamic(() => import('./CookieBanner'), { loading: () => <div>Caricamento...</div> });
 
 export const metadata = {
   title: {
@@ -24,6 +27,7 @@ export default function RootLayout({ children }) {
               {children}
             </Lenis>  
           <Footer />
+          <CookieBanner />
               <Analytics />
               <SpeedInsights />
         </body>
