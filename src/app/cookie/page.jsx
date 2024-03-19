@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import styles from './cookies.module.css'
-/* import CookieBanner from '@/componens/cookieBanner/CookieBanner' */
+import CookieBanner from '@/componens/cookieBanner/CookieBanner'
 
 function Cookie (){
 
@@ -23,7 +23,7 @@ function Cookie (){
 
             <p>Per maggiori informazioni sui cookie e sulle pratiche di privacy, consulta la nostra <Link href="Informativa-privacy-ai-sensi-degli-artt.pdf" target='_blank'>Informativa sulla Privacy</Link>.</p>
         </div>  
-{/*         <CookieBanner />        */}
+        <CookieBanner />       
     </div>
     )
 }
