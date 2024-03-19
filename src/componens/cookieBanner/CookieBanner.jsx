@@ -22,7 +22,7 @@ export default function CookieBanner () {
         >
         <div className={styles.containerTxt}>
             <div className={styles.cookie}>🍪</div>
-            Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. Utilizziamo anche i cookie di terze parti per analizzare il traffico. Cliccando su &quot;Accetto&quot;, acconsenti all&apos;uso di tutti i cookie.
+            <p>Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. Utilizziamo anche i cookie di terze parti per analizzare il traffico. Cliccando su &quot;Accetto&quot;, acconsenti all&apos;uso di tutti i cookie.</p>
         </div>
         </CookieConsent>
     )
