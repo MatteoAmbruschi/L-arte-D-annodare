@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './footer.module.css'
+import CookieBanner from '../cookieBanner/CookieBanner'
 
 function Footer (){
 
@@ -43,6 +44,7 @@ function Footer (){
                <p>Copyrihgt© 2024 L&apos;arte D&apos;annodare</p>
                 <p><i>Site by Matteo Ambruschi</i></p>
             </div>
+            <CookieBanner />
      </>
     )
 }
