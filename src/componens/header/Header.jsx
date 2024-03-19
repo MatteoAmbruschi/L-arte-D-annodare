@@ -1,7 +1,7 @@
 import styles from './header.module.css'
 import Button from '../button/Button'
 import { getImageProps } from 'next/image'
-import getBackgroundImage from '../GetBackgroundImage' 
+import getBackgroundImage from '../getBackgroundImage' 
 
 function Header({imgHead, title, subTitle, text, button = false}) {
 

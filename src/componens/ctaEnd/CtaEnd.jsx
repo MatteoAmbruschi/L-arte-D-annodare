@@ -1,7 +1,7 @@
 import Button from '../button/Button'
 import styles from './ctaEnd.module.css'
 import { getImageProps } from 'next/image'
-import getBackgroundImage from '../GetBackgroundImage'
+import getBackgroundImage from '../getBackgroundImage'
 
 function CtaEnd() {
     const {

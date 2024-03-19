@@ -2,7 +2,7 @@ import styles from './reviews.module.css'
 import Button from '../../button/Button'
 import CardsReviews from './cardsReviews/CardsReviews'
 import { getImageProps } from 'next/image'
-import getBackgroundImage from '../../GetBackgroundImage'
+import getBackgroundImage from '../../getBackgroundImage'
 
 function Reviews () {
     const svg = './star.svg'

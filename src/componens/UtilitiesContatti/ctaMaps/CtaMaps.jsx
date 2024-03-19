@@ -2,7 +2,7 @@ import Button from '@/componens/button/Button'
 import styles from './ctaMaps.module.css'
 import { GoogleMapsEmbed } from '@next/third-parties/google'
 import { getImageProps } from 'next/image'
-import getBackgroundImage from '@/componens/GetBackgroundImage'
+import getBackgroundImage from '@/componens/getBackgroundImage'
 const GOOGLE_MAPS = process.env.GOOGLE_MAPS;
 
 function CtaMaps() {
