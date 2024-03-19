@@ -17,7 +17,7 @@ export default function CookieBanner () {
 
          acceptOnScroll={true}
          /* acceptOnScrollPercentage={10} */
-         debug={true} 
+         /* debug={true}  */
          expires={365}
         >
         <div className={styles.containerTxt}>
