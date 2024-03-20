@@ -6,6 +6,7 @@ import MapsSection from '@/componens/UtilitiesHome/mapsSection/MapsSection';
 import InfoBackground from '@/componens/UtilitiesHome/infoBackground/InfoBackground';
 import Numbers from '@/componens/UtilitiesHome/numbers/Numbers';
 import Servizi from '@/componens/UtilitiesHome/servizi/Servizi';
+import CookieBanner from '@/componens/cookieBanner/CookieBanner';
 
 export const metadata = {
   title: "L'arte D'annodare | Tappeti orientali a Bergamo, lavaggio e restauro a Seriate (Bergamo)",
@@ -32,6 +33,8 @@ export default function Home() {
     <CtaNegozio />
 
     <Reviews />
+
+    <CookieBanner /> 
     </>
   );
 }
