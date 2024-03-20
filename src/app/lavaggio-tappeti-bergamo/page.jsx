@@ -3,6 +3,7 @@ import styles from '../textPage.module.css'
 import InitialText from "@/componens/LavaggioTappeti/initalText/InitialText";
 import Prices from "@/componens/LavaggioTappeti/prices/Prices";
 import CtaEnd from "@/componens/ctaEnd/CtaEnd";
+import CookieBanner from "@/componens/cookieBanner/CookieBanner";
 
 
 export const metadata = {
@@ -26,6 +27,8 @@ const LavaggioTappeti = () => {
             </div>
 
             <CtaEnd />
+
+            <CookieBanner /> 
         </>
     )
 }
