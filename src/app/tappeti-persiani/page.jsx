@@ -1,9 +1,9 @@
-import CtaEnd from "@/componens/ctaEnd/CtaEnd"
-import Header from "@/componens/header/Header"
+import CtaEnd from "@/components/ctaEnd/CtaEnd"
+import Header from "@/components/header/Header"
 import styles from '../textPage.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import Button from "@/componens/button/Button"
+import Button from "@/components/button/Button"
 
 
 export const metadata = {

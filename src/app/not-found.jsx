@@ -1,4 +1,4 @@
-import Header from "@/componens/header/Header"
+import Header from "@/components/header/Header"
 export default function NotFound() {
     const textHead = <strong>Errore 404, la pagina è inesistente</strong>
 

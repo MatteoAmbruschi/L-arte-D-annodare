@@ -1,10 +1,10 @@
 import "./globals.css";
 
-import Menu from "@/componens/menu/Menu";
-import Footer from "@/componens/footer/Footer"
+import Menu from "@/components/menu/Menu";
+import Footer from "@/components/footer/Footer"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import Lenis from "../componens/lenis";
+import Lenis from "../components/lenis";
 
 export const metadata = {
   title: {

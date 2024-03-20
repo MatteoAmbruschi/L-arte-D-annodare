@@ -1,8 +1,8 @@
-import Header from "@/componens/header/Header"
+import Header from "@/components/header/Header"
 import styles from '../textPage.module.css'
-import InitialText from "@/componens/LavaggioTappeti/initalText/InitialText";
-import Prices from "@/componens/LavaggioTappeti/prices/Prices";
-import CtaEnd from "@/componens/ctaEnd/CtaEnd";
+import InitialText from "@/components/LavaggioTappeti/initalText/InitialText";
+import Prices from "@/components/LavaggioTappeti/prices/Prices";
+import CtaEnd from "@/components/ctaEnd/CtaEnd";
 
 
 export const metadata = {

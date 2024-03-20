@@ -1,9 +1,9 @@
-import Header from "@/componens/header/Header"
+import Header from "@/components/header/Header"
 import styles from '../textPage.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import Button from "@/componens/button/Button"
-import CtaEnd from "@/componens/ctaEnd/CtaEnd"
+import Button from "@/components/button/Button"
+import CtaEnd from "@/components/ctaEnd/CtaEnd"
 
 export const metadata = {
     title: "Guida ai Tappeti Kilim: Storia, Tecnica, Prezzi e Cura | Negozio di Tappeti",

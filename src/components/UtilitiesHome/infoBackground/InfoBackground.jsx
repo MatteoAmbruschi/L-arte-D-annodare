@@ -1,4 +1,4 @@
-import Button from '@/componens/button/Button'
+import Button from '@/components/button/Button'
 import InfoShop from '../infoShop/InfoShop'
 import styles from './infoBackground.module.css'
 import { getImageProps } from 'next/image'

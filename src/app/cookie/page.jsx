@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import styles from './cookies.module.css'
-import CookieBanner from '@/componens/cookieBanner/CookieBanner'
+import CookieBanner from '@/components/cookieBanner/CookieBanner'
 
 function Cookie (){
 

@@ -1,11 +1,11 @@
-import Header from '@/componens/header/Header';
-import CarpetsSlide from '@/componens/UtilitiesHome/carpetsSlide/CarpetsSlide';
-import CtaNegozio from '@/componens/UtilitiesHome/ctaNegozio/CtaNegozio';
-import Reviews from '@/componens/UtilitiesHome/reviews/Reviews';
-import MapsSection from '@/componens/UtilitiesHome/mapsSection/MapsSection';
-import InfoBackground from '@/componens/UtilitiesHome/infoBackground/InfoBackground';
-import Numbers from '@/componens/UtilitiesHome/numbers/Numbers';
-import Servizi from '@/componens/UtilitiesHome/servizi/Servizi';
+import Header from '@/components/header/Header';
+import CarpetsSlide from '@/components/UtilitiesHome/carpetsSlide/CarpetsSlide';
+import CtaNegozio from '@/components/UtilitiesHome/ctaNegozio/CtaNegozio';
+import Reviews from '@/components/UtilitiesHome/reviews/Reviews';
+import MapsSection from '@/components/UtilitiesHome/mapsSection/MapsSection';
+import InfoBackground from '@/components/UtilitiesHome/infoBackground/InfoBackground';
+import Numbers from '@/components/UtilitiesHome/numbers/Numbers';
+import Servizi from '@/components/UtilitiesHome/servizi/Servizi';
 
 export const metadata = {
   title: "L'arte D'annodare | Tappeti orientali a Bergamo, lavaggio e restauro a Seriate (Bergamo)",

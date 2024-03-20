@@ -1,8 +1,8 @@
-import CtaMaps from "@/componens/UtilitiesContatti/ctaMaps/CtaMaps"
-import FormContatto from "@/componens/UtilitiesContatti/formContatto/FormContatto"
-import OrariContatti from "@/componens/UtilitiesContatti/orariContatto/OrariContatti"
-import Header from "@/componens/header/Header"
-import CookieBanner from "@/componens/cookieBanner/CookieBanner"
+import CtaMaps from "@/components/UtilitiesContatti/ctaMaps/CtaMaps"
+import FormContatto from "@/components/UtilitiesContatti/formContatto/FormContatto"
+import OrariContatti from "@/components/UtilitiesContatti/orariContatto/OrariContatti"
+import Header from "@/components/header/Header"
+import CookieBanner from "@/components/cookieBanner/CookieBanner"
 
 
 export const metadata = {
