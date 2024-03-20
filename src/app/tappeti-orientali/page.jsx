@@ -4,7 +4,6 @@ import CtaEnd from "@/componens/ctaEnd/CtaEnd"
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from "@/componens/button/Button"
-import CookieBanner from "@/componens/cookieBanner/CookieBanner"
 
 
 export const metadata = {
@@ -58,8 +57,6 @@ function TappetiOrientali() {
 
             </div>
             <CtaEnd />
-
-            <CookieBanner /> 
         </div>
     )
 }

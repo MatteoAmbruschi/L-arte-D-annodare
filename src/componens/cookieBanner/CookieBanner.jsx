@@ -15,7 +15,7 @@ export default function CookieBanner () {
          enableDeclineButton
          declineButtonText='RIFIUTO'
 
-         acceptOnScroll={true}
+         /* acceptOnScroll={true} */
          /* acceptOnScrollPercentage={10} */
          /* debug={true}  */
          expires={365}

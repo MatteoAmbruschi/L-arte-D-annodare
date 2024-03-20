@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Button from "@/componens/button/Button"
 import CtaEnd from "@/componens/ctaEnd/CtaEnd"
-import CookieBanner from "@/componens/cookieBanner/CookieBanner"
 
 export const metadata = {
     title: "Guida ai Tappeti Kilim: Storia, Tecnica, Prezzi e Cura | Negozio di Tappeti",
@@ -54,8 +53,6 @@ function Tappetikilim() {
 
             </div>
             <CtaEnd />
-
-            <CookieBanner /> 
         </div>
     )
 }

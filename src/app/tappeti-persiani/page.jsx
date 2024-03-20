@@ -4,7 +4,6 @@ import styles from '../textPage.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from "@/componens/button/Button"
-import CookieBanner from "@/componens/cookieBanner/CookieBanner"
 
 
 export const metadata = {
@@ -77,8 +76,6 @@ function TappetiPersiani() {
 
             </div>
             <CtaEnd />
-
-            <CookieBanner /> 
         </div>
     )
 }
