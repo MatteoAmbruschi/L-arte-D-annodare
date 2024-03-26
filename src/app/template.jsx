@@ -1,9 +1,9 @@
 'use client'
 import { LazyMotion, domAnimation, m } from "framer-motion";
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 
 export default function Template({ children }) {
-    useEffect(() => {
+    useLayoutEffect(() => {
         window.scrollTo(0,0)
     }, []);
 
