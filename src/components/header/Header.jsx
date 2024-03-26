@@ -2,7 +2,6 @@ import styles from './header.module.css'
 import Button from '../button/Button'
 import { getImageProps } from 'next/image'
 import getBackgroundImage from '../getBackgroundImage' 
-import Motion from '../Motion'
 
 function Header({imgHead, title, subTitle, text, button = false}) {
 
@@ -13,8 +12,7 @@ function Header({imgHead, title, subTitle, text, button = false}) {
       const style = { height: '100%', width: '100%', backgroundImage }
    
 
-    return (
-      <Motion>
+    return (     
         <section className={styles.containerHeader}>
             <div className={styles.img} style={style} />
                 <div className={styles.gradient}>
@@ -36,7 +34,6 @@ function Header({imgHead, title, subTitle, text, button = false}) {
                       {button ? (<><div className={styles.hr} /> <Button /></>) : ''}
                 </div>
         </section>  
-       </Motion>
     )
 }
 

@@ -1,7 +1,11 @@
 'use client'
 import { LazyMotion, domAnimation, m } from "framer-motion";
+import { useEffect } from "react";
 
-export default function Motion({ children }) {
+export default function Template({ children }) {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, []);
 
     return (
         <LazyMotion features={domAnimation}>
