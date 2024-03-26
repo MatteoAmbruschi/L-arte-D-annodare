@@ -14,7 +14,7 @@ export default function Template({ children }) {
                 animate={{ opacity: 1 }}
                 transition={{ ease: 'easeInOut', duration: 0.45 }}
             >
-                        {children}
+                    {children}
             </m.div>
         </LazyMotion>
     );
