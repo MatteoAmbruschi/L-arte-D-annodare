@@ -34,7 +34,7 @@ const Menu = () => {
             <div className={styles.navContainer}>
             
             <Link href="/" className={styles.logoMenu} onClick={() => setToggle(false)}>
-                <Image loading='eager' priority={true}  src='/logo.svg' width={240.48} height={34.00} alt="logo l'arte d'annodare" />
+                <Image loading='eager' src='/logo.svg' width={240.48} height={34.00} alt="logo l'arte d'annodare" />
             </Link>
 
                     <ul className={styles.navMenu}>
