@@ -17,7 +17,6 @@ const Menu = () => {
         let lastScrollTop = 0;
             window.addEventListener("scroll", function(){ 
             let st = window.scrollY || document.documentElement.scrollTop;
-
             if (st > lastScrollTop) {
                 setShowNav(true)
             } else if (st < lastScrollTop) {
@@ -27,6 +26,7 @@ const Menu = () => {
             }, true);
     }, []);
 
+
     const pathname = usePathname();
 
     return (
@@ -34,7 +34,7 @@ const Menu = () => {
             <div className={styles.navContainer}>
             
             <Link href="/" className={styles.logoMenu} onClick={() => setToggle(false)}>
-                <Image loading='eager' src='/logo.svg' width={240.48} height={34.00} alt="logo l'arte d'annodare" />
+                <Image src='/logo.svg' width={240.48} height={34.00} alt="logo l'arte d'annodare" loading='eager' priority={true} />
             </Link>
 
                     <ul className={styles.navMenu}>
@@ -46,20 +46,20 @@ const Menu = () => {
                         </li>
 
                             <li 
-                            onMouseEnter={() => setDropDownToggle(true)}
+                            onMouseEnter={() => setDropDownToggle(!dropDownToggle)}
                             onMouseLeave={() => setDropDownToggle(false)}
                             className={` ${styles.linkMenu} ${dropDownToggle ? styles.dropDownActive : ''}`}>
                                    <p onClick={(() => setDropDownToggle(!dropDownToggle))}>Storie di Tappeti <span><Image src='/arrow-down-icon.svg' width={11} height={11} alt='freccia menu' className={styles.rotateSvg} /></span></p>
                                     <div className={styles.underMenu }>
-                                        <Link href="/tappeti-persiani" onClick={() => setToggle(false)} className={`${styles.prospectiveText} ${pathname === "/tappeti-persiani" ? styles.active : ""}`}>
+                                        <Link href="/tappeti-persiani" onClick={() => {setToggle(false); setDropDownToggle(false)}} className={`${styles.prospectiveText} ${pathname === "/tappeti-persiani" ? styles.active : ""}`}>
                                             <p>Tappeti Persiani</p>
                                             <p>Tappeti Persiani</p>
                                         </Link>
-                                        <Link href="/tappeti-orientali" onClick={() => setToggle(false)} className={`${styles.prospectiveText} ${pathname === "/tappeti-orientali" ? styles.active : ""}`}>
+                                        <Link href="/tappeti-orientali" onClick={() => {setToggle(false); setDropDownToggle(false)}} className={`${styles.prospectiveText} ${pathname === "/tappeti-orientali" ? styles.active : ""}`}>
                                             <p>Tappeti Orientali</p>
                                             <p>Tappeti Orientali</p>
                                         </Link>
-                                        <Link href="/tappeti-kilim" onClick={() => setToggle(false)} className={`${styles.prospectiveText} ${pathname === "/tappeti-kilim" ? styles.active : ""}`}>
+                                        <Link href="/tappeti-kilim" onClick={() => {setToggle(false); setDropDownToggle(false)}} className={`${styles.prospectiveText} ${pathname === "/tappeti-kilim" ? styles.active : ""}`}>
                                             <p>Tappeti Kilim</p>
                                             <p>Tappeti Kilim</p>      
                                         </Link>
