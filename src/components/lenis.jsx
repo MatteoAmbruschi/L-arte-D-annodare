@@ -6,9 +6,7 @@ import { usePathname } from 'next/navigation';
 export default function Lenis({ children }) {
     const [isMobile, setIsMobile] = useState(false);
     const pathname = usePathname();
-
-    const lenis = useLenis(({ scroll }) => {
-    })
+    const lenis = useLenis()
 
     useEffect(() => {
         setIsMobile(window.innerWidth <= 768);
