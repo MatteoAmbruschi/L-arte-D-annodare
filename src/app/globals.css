@@ -39,7 +39,6 @@
 
 html,
 body {
- /*  scroll-behavior: smooth; */
   background: var(--dark);
   color: var(--light);
   font-family: 'Times New Roman', Times, serif, Georgia, Geneva, Verdana, sans-serif;
@@ -367,3 +366,20 @@ p a:hover {
              ::-webkit-scrollbar-track{background-color: var(--light);}      
               ::-webkit-scrollbar-thumb{background-color: var(--dark);}
                 ::-webkit-scrollbar-thumb:hover{border: 1px solid var(--red);}
+
+
+                html.lenis, html.lenis body {
+                  height: auto;
+                }
+                
+                .lenis.lenis-smooth {
+                  scroll-behavior: auto !important;
+                }
+                
+                .lenis.lenis-smooth [data-lenis-prevent] {
+                  overscroll-behavior: contain;
+                }
+                
+                .lenis.lenis-stopped {
+                  overflow: hidden;
+                }
