@@ -18,7 +18,7 @@ export default function Lenis({ children }) {
                 immediate: true,
             }); 
         }
-    }, [pathname]);
+    }, [pathname, isMobile, lenis]);
 
     return (
         <>
