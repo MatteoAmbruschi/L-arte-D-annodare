@@ -1,5 +1,5 @@
 .footer{
-    flex-direction: row;
+    flex-direction: row !important;
     justify-content: space-between;
 }
 
@@ -90,7 +90,7 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
     .footer{
-        flex-direction: column;
+        flex-direction: column !important;
     }
     .footer p {
         font-size: 16px;
@@ -112,7 +112,7 @@
 
 @media screen and (max-width: 480px) {
     .footer{
-        flex-direction: column;
+        flex-direction: column !important;
     }
     .footer p {
         font-size: 15.5px;
