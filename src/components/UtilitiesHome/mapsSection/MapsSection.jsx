@@ -3,7 +3,6 @@ import { GoogleMapsEmbed } from '@next/third-parties/google'
 const GOOGLE_MAPS = process.env.GOOGLE_MAPS;
 
 function MapsSection() {
-console.log(GOOGLE_MAPS)
     return(
         <div className={`mainContent ${styles.containerMapTxt}`}>
 
