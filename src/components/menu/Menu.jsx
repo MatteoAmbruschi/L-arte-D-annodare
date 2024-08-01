@@ -49,7 +49,7 @@ const Menu = () => {
                             onMouseEnter={() => setDropDownToggle(true)}
                             onMouseLeave={() => setDropDownToggle(false)}
                             className={` ${styles.linkMenu} ${dropDownToggle ? styles.dropDownActive : ''}`}>
-                                   <p onClick={(() => setDropDownToggle(prev => !prev))}>Storie di Tappeti <span><Image src='/arrow-down-icon.svg' width={11} height={11} alt='freccia menu' className={styles.rotateSvg} /></span></p>
+                                   <p onClick={(() => setDropDownToggle(!dropDownToggle))}>Storie di Tappeti <span><Image src='/arrow-down-icon.svg' width={11} height={11} alt='freccia menu' className={styles.rotateSvg} /></span></p>
                                     <div className={styles.underMenu }>
                                         <Link href="/tappeti-persiani" onClick={() => {setToggle(false); setDropDownToggle(false)}} className={`${styles.prospectiveText} ${pathname === "/tappeti-persiani" ? styles.active : ""}`}>
                                             <p>Tappeti Persiani</p>
