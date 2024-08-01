@@ -46,7 +46,7 @@ const Menu = () => {
                         </li>
 
                             <li 
-                            onMouseEnter={() => setDropDownToggle(!dropDownToggle)}
+                            onMouseEnter={() => setDropDownToggle(true)}
                             onMouseLeave={() => setDropDownToggle(false)}
                             className={` ${styles.linkMenu} ${dropDownToggle ? styles.dropDownActive : ''}`}>
                                    <p onClick={(() => setDropDownToggle(!dropDownToggle))}>Storie di Tappeti <span><Image src='/arrow-down-icon.svg' width={11} height={11} alt='freccia menu' className={styles.rotateSvg} /></span></p>
