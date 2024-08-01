@@ -1,0 +1,62 @@
+.container {
+    width: 100%;
+    background-color: var(--red);
+    padding: 14px;
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
+    text-align: center;
+}
+
+.container p {
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.call a{
+    color: white;
+}
+
+.call a:hover{
+    color: var(--gold);
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        padding: 13px;
+    }
+    .container p {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        padding: 11px;
+    }
+    .container p {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .container {
+        padding: 10px;
+    }
+    .container p {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .container {
+        padding: 9px;
+    }
+    .container p {
+        font-size: 13px;
+    }
+}
