@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
             <Lenis>
               {children}
             </Lenis>
-            <BannerClose />  
+            {/* <BannerClose />  */} 
           <Footer />
               <Analytics />
               <SpeedInsights />
