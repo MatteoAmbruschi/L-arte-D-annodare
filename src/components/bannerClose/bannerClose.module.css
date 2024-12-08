@@ -1,7 +1,7 @@
 .container {
     width: 100%;
     background-color: var(--red);
-    padding: 14px;
+    padding: 24px;
     position: sticky;
     bottom: 0;
     z-index: 999;
@@ -12,8 +12,8 @@
     font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 28px;
+    line-height: 38px;
 }
 
 .call a{
@@ -27,41 +27,54 @@
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     .container {
-        padding: 13px;
+        padding: 18px;
     }
     .container p {
-        font-size: 15px;
-        line-height: 22px;
+        font-size: 24px;
+        line-height: 28px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
-        padding: 11px;
+        padding: 16px;
     }
     .container p {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 20px;
+        line-height: 26px;
     }
 }
 
 @media (min-width: 481px) and (max-width: 767px){
     .container {
-        padding: 10px;
+        padding: 14px;
+        text-align: justify;
     }
     .container p {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 18px;
+        line-height: 24px;
+        display: block;
+        text-align: center;
+    }
+    .call {
+        align-items: end;
+        
     }
 }
 
 
 @media screen and (max-width: 480px){
     .container {
-        padding: 9px;
+        padding: 14px;
+        text-align: justify;
     }
     .container p {
-        font-size: 13px;
-        line-height: 18px;
+        font-size: 16px;
+        line-height: 22px;
+        display: block;
+        text-align: center;
+    }
+    .call {
+        align-items: end;
     }
 }
