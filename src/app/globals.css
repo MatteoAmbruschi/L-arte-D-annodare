@@ -42,6 +42,8 @@ body {
   background: var(--dark);
   color: var(--light);
   font-family: 'Times New Roman', Times, serif, Georgia, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
