@@ -7,8 +7,8 @@ import Button from "@/components/button/Button"
 
 
 export const metadata = {
-    title: "Tutto sui Tappeti Orientali | Storia, Materiali, Tecniche di Tessitura | Negozio di Tappeti a Bergamo",
-    description: "Scopri tutto ciò che c'è da sapere sui tappeti orientali: dalla storia affascinante alle tecniche di tessitura intricata. Visita il nostro negozio di tappeti a Bergamo per esplorare una vasta selezione di tappeti classici e antichi. Contattaci per maggiori informazioni!",
+    title: "Tutto sui Tappeti Orientali | Storia, Materiali, Tecniche di Tessitura | Laboratorio di Tappeti a Bergamo",
+    description: "Scopri tutto ciò che c'è da sapere sui tappeti orientali: dalla storia affascinante alle tecniche di tessitura intricata. Visita il nostro laboratorio di tappeti a Bergamo per esplorare una vasta selezione di tappeti classici e antichi. Contattaci per maggiori informazioni!",
   };
 function TappetiOrientali() {
     const textHead = <>Esplora il Mondo dei Tappeti Orientali: Storia, Materiali e Tecniche di Tessitura. Dalla Bellezza Intricata dei Tappeti Antichi all&apos;Eleganza dei Tappeti Classici, Scopri Come Questi Capolavori Artigianali Portano un Tocco di Storia e di Stile in Ogni Casa.</>

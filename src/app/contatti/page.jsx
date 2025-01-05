@@ -6,8 +6,8 @@ import CookieBanner from "@/components/cookieBanner/CookieBanner"
 
 
 export const metadata = {
-    title: "Tappeti Orientali a Seriate, Bergamo | Contatti, Orari e Parcheggio",
-    description: "Scopri i tappeti persiani dei tuoi sogni nel nostro negozio a Seriate, Bergamo! Visita il nostro laboratorio per il restauro e il lavaggio dei tappeti.",
+    title: "Tappeti Orientali Bergamo | Contatti",
+    description: "Scopri i tappeti persiani dei tuoi sogni Bergamo! Visita il nostro laboratorio per il restauro e il lavaggio dei tappeti.",
   };
 
 function Contatti() {

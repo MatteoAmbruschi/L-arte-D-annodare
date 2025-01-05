@@ -10,7 +10,7 @@ import { BannerClose } from "@/components/bannerClose/BannerClose";
 export const metadata = {
   title: {
     default:
-      "L'arte D'annodare | Tappeti orientali Bergamo, lavaggio e restauro a Seriate (Bergamo)",
+      "L'arte D'annodare | Tappeti orientali Bergamo, lavaggio e restauro tappeti",
     template: "%s | L'arte D'annodare",
   },
   description:

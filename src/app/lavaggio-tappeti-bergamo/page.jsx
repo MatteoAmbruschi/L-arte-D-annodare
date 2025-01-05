@@ -6,8 +6,8 @@ import CtaEnd from "@/components/ctaEnd/CtaEnd";
 
 
 export const metadata = {
-    title: "Negozio di Tappeti a Bergamo | Lavaggio e Restauro | Servizio di Ritiro e Consegna Gratuito",
-    description: "Scopri il nostro negozio di tappeti a Bergamo, specializzato nel lavaggio e restauro dei tappeti. Offriamo un servizio di ritiro e consegna gratuito. Conosci il nostro approccio unico e professionale al mondo dei tappeti.",
+    title: "Laboratorio di Tappeti a Bergamo | Lavaggio e Restauro | Servizio di Ritiro e Consegna Gratuito",
+    description: "Scopri il nostro laboratorio di tappeti a Bergamo, specializzato nel lavaggio e restauro dei tappeti. Offriamo un servizio di ritiro e consegna gratuito. Conosci il nostro approccio unico e professionale al mondo dei tappeti.",
   };
 
 const LavaggioTappeti = () => {

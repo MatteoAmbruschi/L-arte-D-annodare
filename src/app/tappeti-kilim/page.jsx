@@ -6,8 +6,8 @@ import Button from "@/components/button/Button"
 import CtaEnd from "@/components/ctaEnd/CtaEnd"
 
 export const metadata = {
-    title: "Guida ai Tappeti Kilim: Storia, Tecnica, Prezzi e Cura | Negozio di Tappeti",
-    description: "Scopri tutto quello che c'è da sapere sui tappeti kilim: dalla loro storia millenaria alla modernità dei disegni, trova prezzi e consigli per la cura. Esplora il mondo dei kilim nel nostro negozio di tappeti a Bergamo. Contattaci per saperne di più!",
+    title: "Guida ai Tappeti Kilim: Storia, Tecnica, Prezzi e Cura | Laboratorio di Tappeti",
+    description: "Scopri tutto quello che c'è da sapere sui tappeti kilim: dalla loro storia millenaria alla modernità dei disegni, trova prezzi e consigli per la cura. Esplora il mondo dei kilim nel nostro laboratorio di tappeti a Bergamo. Contattaci per saperne di più!",
   };
 
 function Tappetikilim() {
