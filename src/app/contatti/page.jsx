@@ -11,11 +11,11 @@ export const metadata = {
   };
 
 function Contatti() {
-    const textHead = <strong>Parcheggio retro negozio</strong>
+    const textHead = <strong>{/* Parcheggio retro negozio */}</strong>
  
     return (
         <div>
-             <Header imgHead={"/negozio.jpg"} title={"CONTATTAMI"} subTitle={"L'ARTE D'ANNODARE"} text={textHead} />
+             <Header imgHead={"/laboratorio_tappeti.webp"} title={"CONTATTAMI"} subTitle={"L'ARTE D'ANNODARE"} text={textHead} />
 
             <OrariContatti />
 

@@ -13,25 +13,26 @@ export const metadata = {
 };
 
 export default function Home() {
-  const textHead = <><strong>L&apos;arte d&apos;annodare di Giampietro Ambruschi a Seriate (Bergamo),</strong> è un punto di riferimento a <strong>Bergamo e provincia per chi ama il tappeto orientale.</strong> Offriamo nel nostro negozio/laboratorio un&apos;accurato <strong>servizio di vendita, restauro e lavaggio tappeti.</strong> </>;
+  const textHead = <><strong style={{ fontFamily: "Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif", fontStyle: 'normal' }}>L&apos;arte d&apos;annodare si tranforma.</strong> <br />Per poter <strong>offrire sempre il meglio della qualità senza aumenti di prezzo</strong>, dal 1/1/2025 opero nel mio nuovo laboratorio dedicandomi esclusivamente alla manutenzione del tappeto; al suo <strong>restauro</strong> e <strong>lavaggio</strong>.
+    Il nuovo concetto lavorativo è quello di non aprire questo spazio al pubblico per potermi dedicare esclusivamente al restauro, integrandolo con un <strong>SERVIZIO GRATUITO DI RITIRO E CONSEGNA a Bergamo</strong>, in tutta la provincia e zone limitrofe.</>;
 
   return (
     <>
-      <Header imgHead={"/tappetiBergamo.webp"} title={"L'ARTE D'ANNODARE"} subTitle={'NEGOZIO DI TAPPETI'} text={textHead} button={true} />
+      <Header imgHead={"/tappetiBergamo.webp"} title={"L'ARTE D'ANNODARE"} subTitle={'LABORATORIO DI TAPPETI'} text={textHead} button={true} />
 
-    <Servizi />
+      <Servizi />
 
-    <CarpetsSlide />
+      <CarpetsSlide />
 
-    <Numbers />
+      <Numbers />
 
-    <InfoBackground />
+      <InfoBackground />
 
-    <MapsSection />
+      <MapsSection />
 
-    <CtaNegozio />
+      <CtaNegozio />
 
-    <Reviews />
+      <Reviews />
     </>
   );
 }

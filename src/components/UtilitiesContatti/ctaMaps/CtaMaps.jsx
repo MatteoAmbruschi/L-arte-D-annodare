@@ -1,9 +1,7 @@
 import Button from '@/components/button/Button'
 import styles from './ctaMaps.module.css'
-import { GoogleMapsEmbed } from '@next/third-parties/google'
-import { getImageProps } from 'next/image'
+import Image, { getImageProps } from 'next/image'
 import getBackgroundImage from '@/components/getBackgroundImage'
-const GOOGLE_MAPS = process.env.GOOGLE_MAPS;
 
 function CtaMaps() {
     const {
@@ -29,23 +27,13 @@ function CtaMaps() {
 
             <div className={`mainContent ${styles.textContainer}`}>
                 <div className={styles.containerText}>
-                    <h2>Vieni a trovarci</h2>
+                    <h2>A DISPOSIZIONE CON
+                    IL NOSTRO SERVIZIO</h2>
                     <hr className={styles.hr} />
-                    <p>Ti accoglieremo in negozio, per aiutarti al meglio nell&apos;acquisto di un nuovo tappeto, o per restaurare e lavare il tuo tappeto</p>
                     <Button imgUrl={'/up-arrow.svg'} link={'#form'} />
                 </div>
-
                 <div className={styles.maps} id='maps'>
-                    <GoogleMapsEmbed
-                        apiKey={GOOGLE_MAPS}
-                        height="100%"
-                        width="100%"
-                        mode="place"
-                        language='it'
-                        zoom='10'
-                        q="L&#39;Arte%20D&#39;Annodare, Bergamo"
-                        title="Via: Corso Roma, 26 24068 - Seriate (BG)" aria-label="Via: Corso Roma, 26 24068 - Seriate (BG)"
-                    />
+                    <Image src="/contatti.webp" alt="maps" width={378.00} height={379.50} />
                 </div>
             </div>
 

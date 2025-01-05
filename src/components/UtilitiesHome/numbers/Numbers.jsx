@@ -9,7 +9,7 @@ function Numbers () {
           <div className={styles.sectionNumbers}>
             <Image src='/store.svg' width='100' height='60' alt='negozio icona' />
             <div className={styles.spaceIcon}>
-              <h3>Aperti Dal</h3>
+              <h3>Attivi Dal</h3>
               <p>2006</p>
             </div>
           </div>

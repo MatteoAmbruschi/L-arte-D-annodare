@@ -1,15 +1,9 @@
-.containerOrari{
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-}
-
-.containerOrari h6 {
+.contattiContainer h6 {
     text-align: start;
     padding-bottom: 15px;
 }
 
-.containerOrari li{
+.contattiContainer li{
     text-decoration: none;
     font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif ;
     list-style: none;
@@ -36,13 +30,24 @@
     display: flex;
     width: 50%;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 100px 50px 0 50px;
+}
+
+.contattiContainer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    .containerOrari h6 {
+    .contattiContainer h6 {
         padding-bottom: 14px;
     }
-    .containerOrari li{
+    .contattiContainer li{
         margin: 15px 0;
         font-size: 17px;
     }
@@ -53,12 +58,12 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .containerOrari{
+    .contattiContainer{
         flex-direction: column;
         align-items: center;
     }
 
-    .containerOrari h6 {
+    .contattiContainer h6 {
         padding-bottom: 15px;
     }
 
@@ -73,12 +78,12 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px){
-    .containerOrari{
+    .contattiContainer{
         flex-direction: column;
         align-items: center;
     }
 
-    .containerOrari h6 {
+    .contattiContainer h6 {
         padding-bottom: 15px;
     }
 
@@ -87,7 +92,7 @@
         width: 100%;
     }
 
-    .containerOrari li{
+    .contattiContainer li{
         font-size: 17px;
     }
     .hr {
@@ -97,12 +102,12 @@
 
 
 @media screen and (max-width: 480px){
-    .containerOrari{
+    .contattiContainer{
         flex-direction: column;
         align-items: center;
     }
 
-    .containerOrari h6 {
+    .contattiContainer h6 {
         padding-bottom: 15px;
     }
 
@@ -111,7 +116,7 @@
         width: 100%;
     }
 
-    .containerOrari li{
+    .contattiContainer li{
         font-size: 15px;
     }
 

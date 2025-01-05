@@ -53,8 +53,8 @@
     padding: 25px 30px;
  }
  .toggleActive .open{ height: 270px }
- .toggleActiveLavaggio .open { height: 245px }
- .toggleActiveVendita .open { height: 235px }
+ .toggleActiveLavaggio .open { height: 205px }
+ .toggleActiveVendita .open { height: 105px }
 
  .toggleActive .rowInfo, .toggleActiveLavaggio .rowInfo, .toggleActiveVendita .rowInfo{
     color: var(--gold);
@@ -71,9 +71,9 @@
       padding: 20px 30px;
    }
    
-   .toggleActive .open{ height: 315px }
-   .toggleActiveLavaggio .open { height: 295px }
-   .toggleActiveVendita .open { height: 245px }
+   .toggleActive .open{ height: 335px }
+   .toggleActiveLavaggio .open { height: 255px }
+   .toggleActiveVendita .open { height: 95px }
  }
 
  @media (min-width: 768px) and (max-width: 1024px) {
@@ -91,9 +91,9 @@
       padding: 15px 20px;
    }
 
-   .toggleActive .open{ height: 310px }
-   .toggleActiveLavaggio .open { height: 285px }
-   .toggleActiveVendita .open { height: 245px }
+   .toggleActive .open{ height: 320px }
+   .toggleActiveLavaggio .open { height: 255px }
+   .toggleActiveVendita .open { height: 95px }
  }
 
  @media (min-width: 481px) and (max-width: 767px){
@@ -107,9 +107,9 @@
    padding: 20px 30px;
 }
 
-   .toggleActive .open{ height: 310px }
-   .toggleActiveLavaggio .open { height: 290px }
-   .toggleActiveVendita .open { height: 245px }
+   .toggleActive .open{ height: 320px }
+   .toggleActiveLavaggio .open { height: 250px }
+   .toggleActiveVendita .open { height: 95px }
 
  }
  
@@ -133,8 +133,8 @@
    }
    
       .toggleActive .open{ height: 94vw }
-      .toggleActiveLavaggio .open { height: 85vw }
-      .toggleActiveVendita .open { height: 80vw }
+      .toggleActiveLavaggio .open { height: 70vw }
+      .toggleActiveVendita .open { height: 26vw }
 
    .column p {
       font-size: 4vw;
@@ -144,6 +144,6 @@
 
  @media screen and (max-width: 300px) {
    .toggleActive .open{ height: 105vw }
-   .toggleActiveLavaggio .open { height: 90vw }
-   .toggleActiveVendita .open { height: 85vw }
+   .toggleActiveLavaggio .open { height: 80vw }
+   .toggleActiveVendita .open { height: 35vw }
  }

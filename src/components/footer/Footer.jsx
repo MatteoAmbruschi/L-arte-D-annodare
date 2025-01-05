@@ -13,8 +13,7 @@ function Footer (){
             />
 
             <div className={styles.info}>
-                <p><strong>Via:</strong> Corso Roma 26 - 24068 - Seriate (BG)</p>
-                <p><strong>Telefono:</strong> 3297342685 / 035 4536671</p>
+                <p><strong>Telefono:</strong> 3297342685</p>
                 <p><strong>Partita Iva:</strong> 04107640163</p>
             </div>
 
@@ -39,7 +38,7 @@ function Footer (){
 
         
             <div className={styles.copyright}>
-               <p>Copyrihgt© 2024 L&apos;arte D&apos;annodare</p>
+               <p>Copyrihgt© 2025 L&apos;arte D&apos;annodare</p>
                 <p><i>Site by Matteo Ambruschi</i></p>
             </div>
      </>

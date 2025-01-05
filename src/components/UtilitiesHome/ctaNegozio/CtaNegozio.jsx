@@ -9,8 +9,8 @@ function CtaNegozio() {
         <div className={`mainContent ${styles.containerCta}`}>
 
           <Link href='/contatti' className={styles.prospectiveText}>
-             <p>Ti Aspettiamo In Negozio</p>
-             <p>Ti Aspettiamo In Negozio</p>
+             <p>A disposizione con il nostro servizio</p>
+             <p>A disposizione con il nostro servizio</p>
           </Link>
     
         <div className={styles.containerImgCta}>

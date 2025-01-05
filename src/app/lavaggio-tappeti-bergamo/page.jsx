@@ -11,11 +11,11 @@ export const metadata = {
   };
 
 const LavaggioTappeti = () => {
-    const textHead = <>LAVAGGIO D&apos;ECCELLENZA EFFETTUATO CON I MIGLIORI MACCHINARI. Vi ricordiamo inoltre che se aveste difficoltà a raggiungerci o a caricare i tappeti in macchina, vi offriamo un servizio <strong>GRATUITO</strong> di ritiro e consegna.</>;
+    const textHead = <>LAVAGGIO D&apos;ECCELLENZA EFFETTUATO CON I MIGLIORI MACCHINARI. <br></br><span style={{ fontFamily: "Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif", fontStyle: 'normal' }}>Servizio <strong>GRATUITO</strong> di ritiro e consegna.</span></>;
 
     return (
         <>
-            <Header imgHead={"/lavaggio.webp"} title={'LAVAGGIO TAPPETI'} subTitle={"NEGOZIO DI TAPPETI"} text={textHead} button={true} />
+            <Header imgHead={"/lavaggio.webp"} title={'LAVAGGIO TAPPETI'} subTitle={"LABORATORIO DI TAPPETI"} text={textHead} button={true} />
             
             <div className={`mainContent ${styles.textPage}`}>
 

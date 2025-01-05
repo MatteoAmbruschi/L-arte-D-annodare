@@ -57,7 +57,7 @@
     flex-direction: column;
     position: relative;
     align-items: flex-start;
-    width: 50%;
+    width: 60%;
     padding-right: 4%;
 }
 
@@ -67,14 +67,12 @@
 
 .maps {
     position: relative;
-    width: 50%;
-    height: 350px;
+    width: 40%;
 }
 
 .maps div {
     width: 100%;
     height: 100%;
-    padding-left: 4%;
 }
 
 .hr {
@@ -85,6 +83,10 @@
     .hr {
         width: 200px;
     }
+    .maps img {
+        width: 350px;
+        height: auto;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -92,6 +94,16 @@
     .hr {
         width: 170px;
         margin: 25px 0;
+    }
+
+    .maps img {
+        width: 300px;
+        height: auto;
+    }
+
+    .containerText h2 {
+        font-size: 40px;
+        line-height: 40px;
     }
 }
 
@@ -114,11 +126,21 @@
     }
     .maps {
         width: 100%;
-        height: 300px;
+        height: 400px;
+        object-fit: cover;
+        overflow: hidden;
     }
-    .maps iframe {
-        padding-left: 0%;
+
+    .containerText h2 {
+        font-size: 40px;
+        line-height: 40px;
     }
+
+    .maps img {
+        width: 100%;
+        height: auto;
+    }
+
     .hr {
         margin: 30px 0;
     }
@@ -144,9 +166,18 @@
     .maps {
         width: 100%;
         height: 300px;
+        object-fit: cover;
+        overflow: hidden;
     }
-    .maps iframe {
-        padding-left: 0%;
+
+    .containerText h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .maps img {
+        width: 100%;
+        height: auto;
     }
     .hr {
         width: 140px;

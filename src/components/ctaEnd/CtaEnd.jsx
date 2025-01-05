@@ -19,8 +19,8 @@ function CtaEnd() {
                 </svg>
             </div>
             <div className={`mainContent ${styles.containerCta}`}>
-                <h3>NEGOZIO DI TAPPETI</h3>
-                <h6 className={styles.ctaTitle}>VIENI A TROVARCI</h6>
+                <h3>LABORATORIO DI TAPPETI</h3>
+                <h6 className={styles.ctaTitle}>A DISPOSIZIONE CON<br /> IL NOSTRO SERVIZIO</h6>
                 <hr />
                 <Button />
             </div>
