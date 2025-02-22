@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 function InitialText () {
 
@@ -5,6 +6,16 @@ function InitialText () {
         <>
             <h3>SCOPRI TUTTO</h3>
             <h2>Un Modo diverso di essere &quot;Tappetaio&quot;</h2>
+            <video 
+                src="/lavaggio.mp4" 
+                controls 
+                width="100%" 
+                style={{maxWidth: 800}}
+                poster="/video-placeholder.jpg"
+                preload="metadata"
+            >
+                Il tuo browser non supporta il tag video.
+            </video>
             <hr />
             <p>
                 Nella concezione corrente <strong>“tappetaio”</strong> è spesso sinonimo di <strong>“venditore di tappeti”</strong>, modo di dire con connotazione spregiativa di chi, senza troppe remore morali ed etiche, cerca di trarre l&apos;immediato e maggior profitto possibile dalla vendita. Personalmente mi sento lontanissimo da tale definizione.
@@ -24,6 +35,7 @@ function InitialText () {
             <p>
                 Ecco perché anche nella <strong>pulizia,</strong> che è una componente essenziale per <strong>il buon mantenimento del tappeto,</strong> non possiamo agire con tutti nello stesso modo. Per fare solo un esempio, ve ne sono alcuni per cui è consigliabile un lavaggio frequente, per altri sarebbe deleterio. <strong>È essenziale quindi affidarsi a dei veri professionisti.</strong>
             </p>
+            <Image src='/macchinario-lavaggio.jpg' alt="macchinario per il lavaggio di tappeti" width='346' height='446' />
         </>
     )
 }
