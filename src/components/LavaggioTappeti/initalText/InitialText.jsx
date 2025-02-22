@@ -6,6 +6,7 @@ function InitialText () {
         <>
             <h3>SCOPRI TUTTO</h3>
             <h2>Un Modo diverso di essere &quot;Tappetaio&quot;</h2>
+            <hr />
             <video 
                 src="/lavaggio.mp4" 
                 controls 
@@ -16,7 +17,6 @@ function InitialText () {
             >
                 Il tuo browser non supporta il tag video.
             </video>
-            <hr />
             <p>
                 Nella concezione corrente <strong>“tappetaio”</strong> è spesso sinonimo di <strong>“venditore di tappeti”</strong>, modo di dire con connotazione spregiativa di chi, senza troppe remore morali ed etiche, cerca di trarre l&apos;immediato e maggior profitto possibile dalla vendita. Personalmente mi sento lontanissimo da tale definizione.
             </p>
