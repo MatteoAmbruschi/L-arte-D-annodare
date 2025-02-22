@@ -44,6 +44,12 @@ const Menu = () => {
                             <p>Lavaggio Tappeti</p>
                         </Link>
                         </li>
+                        <li className={styles.linkMenu}>
+                        <Link href="/restauro" onClick={() => setToggle(false)} className={`${styles.prospectiveText} ${pathname === "/restauro" ? styles.active : ""}`} >
+                            <p>Restauro Tappeti</p>
+                            <p>Restauro Tappeti</p>
+                        </Link>
+                        </li>
 
                             <li 
                             onMouseEnter={() => setDropDownToggle(true)}

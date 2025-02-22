@@ -7,11 +7,19 @@ function Prices () {
             <>
                 <hr />
                 
-                <h2 className={styles.pulizia}>Pulizia tappeti Bergamo:</h2>
+                <h2 className={styles.pulizia}>Pulizia tappeti Bergamo e provincia:</h2>
                 
                 <div className={styles.table}>
-                    <h4>Lavaggio tappeti standard (eccellente)</h4>
-                    <p>22,00€ <span>Mq</span></p>
+                    <h4>Lavaggio tappeti standard (eccellente): fino a 4<span>Mq</span></h4>
+                    <p>24,00€ <span>Mq</span></p>
+                </div>
+                <div className={styles.table}>
+                    <h4>Lavaggio tappeti standard (eccellente): fino a 16<span>Mq</span></h4>
+                    <p>20,00€ <span>Mq</span></p>
+                </div>
+                <div className={styles.table}>
+                    <h4>Lavaggio tappeti standard (eccellente): oltre 16<span>Mq</span></h4>
+                    <p>16,00€ <span>Mq</span></p>
                 </div>
                 <h4>è comprensivo di:</h4> <p><strong>Lavaggio antiacaro - Lavaggio igienizzante - Lavaggio rigenerativo</strong></p>
 
