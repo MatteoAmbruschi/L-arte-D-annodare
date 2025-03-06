@@ -19,7 +19,7 @@ function Prices () {
                 </div>
                 <div className={styles.table}>
                     <h4>Lavaggio tappeti standard (eccellente): oltre 16<span>Mq</span></h4>
-                    <p>16,00€ <span>Mq</span></p>
+                    <p>18,00€ <span>Mq</span></p>
                 </div>
                 <h4>è comprensivo di:</h4> <p><strong>Lavaggio antiacaro - Lavaggio igienizzante - Lavaggio rigenerativo</strong></p>
 
